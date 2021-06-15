@@ -24,30 +24,32 @@ export default function Layout({ children, contentClass = '' }: { children: any;
   const toggleNavOpen = () => {
     setNavOpen(!navOpen)
     setIsTransitioning(true)
-    setTimeout(() => setIsTransitioning(false), 150)
+    setTimeout(() => setIsTransitioning(false), transitionDurationMs)
   }
 
   return (
     <div className='w-full h-full flex'>
       <Nav className={'w-56 ' + (navOpen || !isMobile ? '' : '-ml-56')} />
-      {isMobile && (
-        <button className={'h-32 quiet-btn flex items-center text-4xl pl-12'}>
-          <FontAwesomeIcon
-            icon={faChevronLeft}
-            onClick={toggleNavOpen}
-            className={`transform-gpu duration-${transitionDurationMs * 2} ` + (navOpen ? 'rotate-0' : 'rotate-180')}
-          />
-        </button>
-      )}
-      <section
-        className={
-          `h-screen overflow-scroll transition-all duration-${transitionDurationMs} p-12 ` +
-          contentClass +
-          (isMobile && navOpen ? ' -mr-56' : '')
-        }
-      >
-        <LayoutContext.Provider value={{ navOpen, isTransitioning }}>{children}</LayoutContext.Provider>
-      </section>
+      <div className='flex-col'>
+        {isMobile && (
+          <button className={'h-32 quiet-btn flex items-center text-4xl pl-12 -mb-12'}>
+            <FontAwesomeIcon
+              icon={faChevronLeft}
+              onClick={toggleNavOpen}
+              className={`transform-gpu duration-${transitionDurationMs * 2} ` + (navOpen ? 'rotate-0' : 'rotate-180')}
+            />
+          </button>
+        )}
+        <section
+          className={
+            `h-screen overflow-scroll transition-all duration-${transitionDurationMs} p-12 ` +
+            contentClass +
+            (isMobile && navOpen ? ' -mr-56' : '')
+          }
+        >
+          <LayoutContext.Provider value={{ navOpen, isTransitioning }}>{children}</LayoutContext.Provider>
+        </section>
+      </div>
     </div>
   )
 }
