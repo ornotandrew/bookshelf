@@ -7,7 +7,12 @@ module.exports = {
     extend: {
       fontFamily: { 'sans': ['Roboto', 'sans-serif'] },
       gridTemplateColumns: {
-        'home': 'repeat(5, minmax(140px, 1fr))',
+        'hero': 'repeat(5, minmax(140px, 1fr))',
+        'hero-mobile': 'repeat(1, minmax(140px, 1fr))',
+      },
+      gridTemplateRows: {
+        'hero': 'repeat(5, minmax(0, 1fr))',
+        'hero-mobile': 'repeat(11, minmax(75px, 1fr))',
       }
     },
     colors: {

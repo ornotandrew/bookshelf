@@ -6,12 +6,28 @@ import { reviews } from '../constants'
 
 export default function Home() {
   return (
-    <Layout contentClass='grid grid-cols-home grid-rows-5 gap-y-8 gap-x-4'>
-      <BookHero className='col-span-5 row-span-4' extract={reviews.currentlyReading[0]} />
-      <BookTile grayscale className='col-span-2' book={reviews.finishedReading[0].book} />
-      <BookTile grayscale className='col-span-2' book={reviews.finishedReading[1].book} />
+    <Layout
+      contentClass={
+        'grid ' +
+        // desktop
+        'md:grid-cols-hero md:grid-rows-hero md:gap-y-8 md:gap-x-4 ' +
+        // mobile
+        'grid-cols-hero-mobile grid-rows-hero-mobile gap-y-4'
+      }
+    >
+      <BookHero className='md:col-span-5 md:row-span-4 row-span-3' extract={reviews.currentlyReading[0]} />
+      <BookTile
+        grayscale
+        className='md:col-span-2 md:row-span-1 col-span-1 row-span-2'
+        book={reviews.finishedReading[0].book}
+      />
+      <BookTile
+        grayscale
+        className='md:col-span-2 md:row-span-1 col-span-1 row-span-2'
+        book={reviews.finishedReading[1].book}
+      />
       <Link href='/books'>
-        <a className='card flex items-center justify-center text-typography-dim '>View more</a>
+        <a className='card flex items-center justify-center text-typography-dim'>View more</a>
       </Link>
     </Layout>
   )

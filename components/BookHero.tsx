@@ -2,9 +2,10 @@ import { Extract } from 'goodreads-export/lib/types'
 import ProgressBar from 'components/ProgressBar'
 import ExternalLink from 'components/ExternalLink'
 
-export default function BookHero({ extract, className }: { extract: Extract; className?: string }) {
+export default function BookHero({ extract, className = '' }: { extract: Extract; className?: string }) {
   const book = extract.book
   const progressDesc = extract.timeline.progress.sort((a, b) => (a.date < b.date ? 1 : -1))
+
   return (
     <article className={'card p-14 flex w-full min-w-min h-full ' + className}>
       <img className='rounded shadow mr-14 flex-shrink-0' src={book.imageUrl} alt={book.title}></img>

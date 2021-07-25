@@ -7,7 +7,7 @@ export default function SeriesGroup({ groupedReviews }: { groupedReviews: Extrac
   const series = groupedReviews[0].book.series
   const author = groupedReviews[0].book.author
   return (
-    <section id={seriesId(series?.name)} className='flex flex-column flex-wrap w-full mb-16'>
+    <section key={seriesId(series?.name)} className='flex flex-column flex-wrap w-full mb-16'>
       <header className='mb-8 w-full'>
         <h1 className='text-2xl'>
           {series ? <ExternalLink href={series.url}>{series.name}</ExternalLink> : 'No series'}
