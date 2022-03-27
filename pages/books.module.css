@@ -1,0 +1,7 @@
+.Container {
+  padding: var(--space-2) 25%;
+}
+
+.ReviewContainer {
+  margin-top: var(--space-2);
+}

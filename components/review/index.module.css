@@ -1,0 +1,33 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+
+  --height: 100px;
+  height: var(--height);
+}
+
+.Container:not(:first-child) {
+  margin-top: var(--space-3);
+}
+
+.ImageContainer {
+  position: relative;
+  height: var(--height);
+  width: calc(var(--height) * 0.75);
+  margin-right: var(--space-2);
+}
+
+.Info {
+  height: var(--height);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.BookInfo {
+  font-size: var(--font-size-2);
+}
+
+.ReadInfo {
+  font-size: var(--font-size-1);
+}
