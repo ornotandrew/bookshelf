@@ -1,48 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  @font-face {
-    font-family: 'Roboto';
-    font-weight: 100;
-    font-display: swap;
-    src: local('Roboto'), url(/bookshelf/fonts/Roboto/Roboto-Light.ttf) format('truetype');
-  }
-  @font-face {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-display: swap;
-    src: local('Roboto'), url(/bookshelf/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
-  }
-  @font-face {
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-display: swap;
-    src: local('Roboto'), url(/bookshelf/fonts/Roboto/Roboto-Bold.ttf) format('truetype');
-  }
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-@layer utilities {
-  .filter-grayscale {
-    filter: grayscale(100%);
-  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-  .card {
-    @apply bg-base-2 rounded border border-base-3 shadow
-  }
-
-  .quiet-btn {
-    @apply focus:outline-none;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  /* https://stackoverflow.com/questions/66416614/how-to-create-scrollable-element-in-tailwind-without-a-scrollbar */
-  .no-scrollbar::-webkit-scrollbar {
-      display: none; /* Chrome, Safari and Opera */
-  }
-  .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-  }
+* {
+  box-sizing: border-box;
 }
