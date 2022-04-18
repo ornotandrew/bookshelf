@@ -2,32 +2,55 @@
   display: flex;
   flex-direction: row;
 
-  --height: 100px;
+  --height: 200px;
   height: var(--height);
-}
+  --width: calc(var(--height) / 1.5 * 2);
+  width: var(--width);
 
-.Container:not(:first-child) {
-  margin-top: var(--space-3);
+  --border-color: hsl(0, 0%, 90%);
+  --border: 1px solid var(--border-color);
+  --border-radius: var(--border-radius-1);
+
+  border: var(--border);
+  border-radius: var(--border-radius);
+
+  background-color: hsl(0, 0%, 99%);
 }
 
 .ImageContainer {
   position: relative;
   height: var(--height);
-  width: calc(var(--height) * 0.75);
-  margin-right: var(--space-2);
+  min-width: calc(var(--height) / 1.5);
+
+  border: var(--border);
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  overflow: hidden;
+
+  /* don't let the parent's border offset this element */
+  margin-top: -1px;
+  margin-left: -1px;
 }
 
 .Info {
   height: var(--height);
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: calc(var(--border-radius)/2) var(--border-radius);
 }
 
-.BookInfo {
+.BookTitle {
+  font-size: var(--font-size-3);
+}
+
+.AuthorName {
   font-size: var(--font-size-2);
+  color: var(--color-text-lighten-1);
 }
 
 .ReadInfo {
+  align-self: flex-end;
   font-size: var(--font-size-1);
+  color: var(--color-text-lighten-1);
 }

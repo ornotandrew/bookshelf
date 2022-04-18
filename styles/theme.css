@@ -11,4 +11,13 @@
   --font-size-3: 18px;
   --font-size-4: 24px;
   --font-size-5: 32px;
+
+  --border-radius-1: 8px;
+
+  --color-primary: red;
+
+  --color-text-primary: black;
+  --color-text-lighten-1: hsl(0, 0%, 35%);
+  --color-text-lighten-2: hsl(0, 0%, 50%);
+  --color-text-lighten-3: hsl(0, 0%, 75%);
 }

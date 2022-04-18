@@ -20,9 +20,18 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/constants": ["constants.ts"],
-      "@/components/*": ["components/*"],
-      "@/pages/*": ["pages/*"]
+      "@/constants": [
+        "constants.ts"
+      ],
+      "@/components/*": [
+        "components/*"
+      ],
+      "@/pages/*": [
+        "pages/*"
+      ],
+      "@/public/*": [
+        "public/*"
+      ]
     }
   },
   "include": [

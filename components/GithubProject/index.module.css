@@ -1,0 +1,6 @@
+.A {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  vertical-align: bottom;
+}
