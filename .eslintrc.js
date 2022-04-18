@@ -1,19 +1,16 @@
 module.exports = {
   root: true,
   env: {
-    browser: true
+    browser: true,
   },
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    "next/core-web-vitals"
-  ],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'next/core-web-vitals'],
   rules: {
     '@typescript-eslint/semi': ['error', 'never'],
-    'quotes': ['error', 'single'],
-    'object-curly-spacing': ['error', 'always']
+    quotes: ['error', 'single'],
+    'object-curly-spacing': ['error', 'always'],
+    '@next/next/no-img-element': 'off',
   },
-  overrides: [{ files: ['**/*.ts', '**/*.test.ts'] }]
-};
+  overrides: [{ files: ['**/*.ts', '**/*.test.ts'] }],
+}

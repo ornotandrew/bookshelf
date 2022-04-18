@@ -1,5 +1,4 @@
 import styles from './index.module.css'
-import Image from 'next/image'
 import type { Extract } from 'goodreads-export/lib/types'
 import { Finished } from '@/constants'
 import { DateTime } from 'luxon'
@@ -12,7 +11,7 @@ export const Review = ({ review }: { review: Finished<Extract> }) => {
     <article className={styles.Container}>
       <div className={styles.ImageContainer}>
         <A href={review.book.url}>
-          <Image src={review.book.imageUrl} alt={review.book.title} layout='fill' />
+          <img src={review.book.imageUrl} alt={review.book.title} className={styles.Cover}/>
         </A>
       </div>
       <div className={styles.Info}>
