@@ -15,6 +15,8 @@
   border-radius: var(--border-radius);
 
   background-color: hsl(0, 0%, 99%);
+
+  --progress-bar-color: hsl(0, 0%, 75%);
 }
 
 .Cover {
@@ -42,20 +44,32 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: calc(var(--border-radius)/2) var(--border-radius);
+  padding: var(--border-radius);
 }
 
 .BookTitle {
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-4);
 }
 
 .AuthorName {
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-3);
   color: var(--color-text-lighten-1);
 }
 
 .ReadInfo {
   align-self: flex-end;
-  font-size: var(--font-size-1);
+  font-size: var(--font-size-2);
   color: var(--color-text-lighten-1);
+}
+
+.ProgressBarOuter {
+  width: 100%;
+  height: var(--space-1);
+  border: 1px solid var(--progress-bar-color);
+  border-radius: var(--border-radius-1);
+}
+
+.ProgressBarInner {
+  height: 100%;
+  background-color: var(--progress-bar-color)
 }

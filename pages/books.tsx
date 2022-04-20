@@ -2,24 +2,34 @@ import type { NextPage } from 'next'
 import Select from 'react-select'
 import styles from './books.module.css'
 import { Finished, WithSeries, readReviews } from '@/constants'
-import Review from '@/components/review'
+import Review from '@/components/Review'
 import { useMemo, useState } from 'react'
 import { DateTime } from 'luxon'
 import { Author, Series, Extract } from 'goodreads-export/lib/types'
 import A from '@/components/A'
 import GithubProject from '@/components/GithubProject'
+import Layout from '@/components/Layout'
+import { Nav } from '@/components/Nav'
 
 const authorsByUrl = readReviews.reduce<Record<string, Author>>(
-  (acc, review) => (review.book.author.url in acc ? acc : { ...acc, [review.book.author.url]: review.book.author }),
+  (acc, review) =>
+    review.book.author.url in acc
+      ? acc
+      : { ...acc, [review.book.author.url]: review.book.author },
   {}
 )
 
-const seriesByUrl = readReviews.reduce<Record<string, Series>>((acc, review) => {
-  if (!review.book.series) {
-    return acc
-  }
-  return review.book.series.url in acc ? acc : { ...acc, [review.book.series.url]: review.book.series }
-}, {})
+const seriesByUrl = readReviews.reduce<Record<string, Series>>(
+  (acc, review) => {
+    if (!review.book.series) {
+      return acc
+    }
+    return review.book.series.url in acc
+      ? acc
+      : { ...acc, [review.book.series.url]: review.book.series }
+  },
+  {}
+)
 
 const Books: NextPage = () => {
   const [authorUrl, setAuthorUrl] = useState<string | null>(null)
@@ -28,7 +38,11 @@ const Books: NextPage = () => {
   const authors = useMemo<Author[]>(() => {
     const filteredIndex = seriesUrl
       ? readReviews.reduce((acc, review) => {
-          if (!review.book.series || review.book.author.url in acc || review.book.series.url !== seriesUrl) {
+          if (
+            !review.book.series ||
+            review.book.author.url in acc ||
+            review.book.series.url !== seriesUrl
+          ) {
             return acc
           }
           return {
@@ -38,13 +52,19 @@ const Books: NextPage = () => {
         }, {} as Record<string, Author>)
       : authorsByUrl
 
-    return Object.values(filteredIndex).sort((a, b) => a.name.localeCompare(b.name))
+    return Object.values(filteredIndex).sort((a, b) =>
+      a.name.localeCompare(b.name)
+    )
   }, [seriesUrl])
 
   const series = useMemo<Series[]>(() => {
     const filteredIndex = authorUrl
       ? readReviews.reduce((acc, review) => {
-          if (!review.book.series || review.book.series.url in acc || review.book.author.url !== authorUrl) {
+          if (
+            !review.book.series ||
+            review.book.series.url in acc ||
+            review.book.author.url !== authorUrl
+          ) {
             return acc
           }
           return {
@@ -54,54 +74,80 @@ const Books: NextPage = () => {
         }, {} as Record<string, Series>)
       : seriesByUrl
 
-    return Object.values(filteredIndex).sort((a, b) => a.name.localeCompare(b.name))
+    return Object.values(filteredIndex).sort((a, b) =>
+      a.name.localeCompare(b.name)
+    )
   }, [authorUrl])
 
   const orderedReviews = useMemo(() => {
     const orderedReviews = [...readReviews]
-      .filter((r) => !authorUrl || (r as Finished<Extract>).book.author.url === authorUrl)
-      .filter((r) => !seriesUrl || r.book.series?.url === seriesUrl) as WithSeries<Finished<Extract>>[]
+      .filter(
+        (r) =>
+          !authorUrl || (r as Finished<Extract>).book.author.url === authorUrl
+      )
+      .filter(
+        (r) => !seriesUrl || r.book.series?.url === seriesUrl
+      ) as WithSeries<Finished<Extract>>[]
 
     return orderedReviews.sort((a, b) =>
-      DateTime.fromISO(a.timeline.finished) < DateTime.fromISO(b.timeline.finished) ? 1 : -1
+      DateTime.fromISO(a.timeline.finished) <
+      DateTime.fromISO(b.timeline.finished)
+        ? 1
+        : -1
     )
   }, [authorUrl, seriesUrl])
 
   return (
-    <div className={styles.Container}>
+    <Layout>
       <header>
-        <h1>Bookshelf</h1>
+      <Nav/>
+        <h1>Books I&apos;ve read</h1>
         <p>
-          This data was pulled from my <A href='https://www.goodreads.com/wraithy'>Goodreads</A> profile using{' '}
-          <GithubProject user='wraithy' repo='goodreads-export' />.
+          This data was pulled from my{' '}
+          <A href='https://www.goodreads.com/wraithy'>Goodreads</A> profile
+          using <GithubProject user='wraithy' repo='goodreads-export' />.
         </p>
       </header>
-        <div className={styles.Filters}>
-          <Select
-            placeholder='Author'
-            isClearable={true}
-            onChange={(newValue) => {
-              setAuthorUrl(newValue?.value ?? null)
-            }}
-            value={authorUrl ? { value: authorUrl, label: authorsByUrl[authorUrl].name } : null}
-            options={authors.map((author) => ({ value: author.url, label: author.name }))}
-          />
-          <Select
-            placeholder='Series'
-            isClearable={true}
-            onChange={(newValue) => {
-              setSeriesUrl(newValue?.value ?? null)
-            }}
-            value={seriesUrl ? { value: seriesUrl, label: seriesByUrl[seriesUrl].name } : null}
-            options={Object.values(series).map((series) => ({ value: series.url, label: series.name }))}
-          />
-        </div>
+      <div className={styles.Filters}>
+        <Select
+          placeholder='Author'
+          isClearable={true}
+          onChange={(newValue) => {
+            setAuthorUrl(newValue?.value ?? null)
+          }}
+          value={
+            authorUrl
+              ? { value: authorUrl, label: authorsByUrl[authorUrl].name }
+              : null
+          }
+          options={authors.map((author) => ({
+            value: author.url,
+            label: author.name,
+          }))}
+        />
+        <Select
+          placeholder='Series'
+          isClearable={true}
+          onChange={(newValue) => {
+            setSeriesUrl(newValue?.value ?? null)
+          }}
+          value={
+            seriesUrl
+              ? { value: seriesUrl, label: seriesByUrl[seriesUrl].name }
+              : null
+          }
+          options={Object.values(series).map((series) => ({
+            value: series.url,
+            label: series.name,
+          }))}
+        />
+      </div>
       <section className={styles.ReviewContainer}>
         {orderedReviews.map((r) => (
           <Review key={r.reviewId} review={r} />
         ))}
       </section>
-    </div>
+    </Layout>
   )
 }
 

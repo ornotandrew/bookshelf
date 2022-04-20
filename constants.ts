@@ -1,5 +1,15 @@
 import rawReviews from './reviews.json'
-import type { Extract, ReviewTimeline, Series } from 'goodreads-export/lib/types'
+import type {
+  Extract,
+  ReviewTimeline,
+  Series,
+} from 'goodreads-export/lib/types'
+
+export type Started<T extends Extract> = T & {
+  timeline: ReviewTimeline & {
+    started: string
+  }
+}
 
 export type Finished<T extends Extract> = T & {
   timeline: ReviewTimeline & {
@@ -17,3 +27,7 @@ export type WithSeries<T extends Extract> = T & {
 export const reviews = rawReviews as Extract[]
 
 export const readReviews = reviews.filter((r) => r.timeline.finished !== null)
+
+export const currentlyReading = reviews.filter(
+  (r) => r.timeline.started && !r.timeline.finished
+) as Started<Extract>[]

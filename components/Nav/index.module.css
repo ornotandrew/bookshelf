@@ -1,0 +1,22 @@
+.Links {
+  margin-bottom: var(--space-4);
+  font-size: var(--font-size-2);
+}
+
+.Links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  gap: var(--space-2);
+}
+
+.Links a {
+  color: var(--color-text-primary);
+}
+
+.CurrentPage {
+  text-decoration: underline;
+  text-underline-offset: var(--space-1);
+}
