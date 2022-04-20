@@ -2,6 +2,12 @@
   margin-top: var(--space-2);
 }
 
+.PageTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
 .CurrentlyReading {
   width: 100%;
   margin-top: var(--space-4);

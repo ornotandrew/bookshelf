@@ -6,13 +6,17 @@ import GithubProject from '@/components/GithubProject'
 import { currentlyReading } from '@/constants'
 import Review from '@/components/Review'
 import { Nav } from '@/components/Nav'
+import bookshelf from '@/public/bookshelf.svg'
 
 const Home: NextPage = () => {
   return (
     <Layout>
       <header className={styles.Header}>
         <Nav />
-        <h1>📚 My Bookshelf</h1>
+        <h1 className={styles.PageTitle}>
+          <img src={bookshelf.src} width={48} height={48} alt='Bookshelf' /> My
+          Bookshelf
+        </h1>
         <p>
           I think bookshelves are great. They can reveal so much about the
           owner&apos;s tastes! Unfortunately, I tend to read eBooks and
