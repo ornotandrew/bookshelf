@@ -1,12 +1,12 @@
 import styles from './index.module.css'
-import type { Extract } from 'goodreads-export/lib/types'
+import type { Review as ReviewType } from 'goodreads-export/lib/types'
 import { DateTime } from 'luxon'
 import A from '@/components/A'
 import { Started } from '@/constants'
 
 const humanDate = (d: string) => DateTime.fromISO(d).toFormat('LLL yyyy')
 
-const Progress = ({ review }: { review: Started<Extract> }) => {
+const Progress = ({ review }: { review: Started<ReviewType> }) => {
   const started = review.timeline.started
   const { percent, date } = review.timeline.progress.at(-1) ?? {
     percent: 0,
@@ -27,7 +27,7 @@ Updated ${humanDate(date)}`
   )
 }
 
-export const Review = ({ review }: { review: Started<Extract> }) => {
+export const Review = ({ review }: { review: Started<ReviewType> }) => {
   return (
     <article className={styles.Container}>
       <div className={styles.ImageContainer}>

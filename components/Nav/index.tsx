@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 const links = [
   { href: '/', label: 'Currently reading' },
   { href: '/books', label: 'Finished books' },
-  // { href: '/stats', label: 'Stats' },
+  { href: '/stats', label: 'Stats' },
 ]
 
 export const Nav = () => {

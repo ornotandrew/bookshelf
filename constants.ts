@@ -1,33 +1,32 @@
-import rawReviews from './reviews.json'
-import type {
-  Extract,
-  ReviewTimeline,
-  Series,
-} from 'goodreads-export/lib/types'
+import extract from './extract.json'
+import { Review, ReviewTimeline, Series } from 'goodreads-export/lib/types'
+import { reviewsFromExtract, mostRecentlyFinished } from 'goodreads-export/lib/util/transform'
 
-export type Started<T extends Extract> = T & {
+export type Started<T extends Review> = T & {
   timeline: ReviewTimeline & {
     started: string
   }
 }
 
-export type Finished<T extends Extract> = T & {
+export type Finished<T extends Review> = T & {
   timeline: ReviewTimeline & {
     started: string
     finished: string
   }
 }
 
-export type WithSeries<T extends Extract> = T & {
+export type WithSeries<T extends Review> = T & {
   book: {
     series: Series
   }
 }
 
-export const reviews = rawReviews as Extract[]
+export const reviews = reviewsFromExtract(extract)
 
-export const readReviews = reviews.filter((r) => r.timeline.finished !== null)
+export const readReviews = reviews
+  .filter((r) => r.timeline.finished !== null)
+  .sort(mostRecentlyFinished)
 
 export const currentlyReading = reviews.filter(
   (r) => r.timeline.started && !r.timeline.finished
-) as Started<Extract>[]
+) as Started<Review>[]

@@ -5,7 +5,11 @@ import { Finished, WithSeries, readReviews } from '@/constants'
 import Review from '@/components/Review'
 import { useMemo, useState } from 'react'
 import { DateTime } from 'luxon'
-import { Author, Series, Extract } from 'goodreads-export/lib/types'
+import type {
+  Author,
+  Series,
+  Review as ReviewType,
+} from 'goodreads-export/lib/types'
 import A from '@/components/A'
 import GithubProject from '@/components/GithubProject'
 import Layout from '@/components/Layout'
@@ -83,11 +87,12 @@ const Books: NextPage = () => {
     const orderedReviews = [...readReviews]
       .filter(
         (r) =>
-          !authorUrl || (r as Finished<Extract>).book.author.url === authorUrl
+          !authorUrl ||
+          (r as Finished<ReviewType>).book.author.url === authorUrl
       )
       .filter(
         (r) => !seriesUrl || r.book.series?.url === seriesUrl
-      ) as WithSeries<Finished<Extract>>[]
+      ) as WithSeries<Finished<ReviewType>>[]
 
     return orderedReviews.sort((a, b) =>
       DateTime.fromISO(a.timeline.finished) <
@@ -100,7 +105,7 @@ const Books: NextPage = () => {
   return (
     <Layout>
       <header>
-      <Nav/>
+        <Nav />
         <h1>Books I&apos;ve read</h1>
         <p>
           This data was pulled from my{' '}
