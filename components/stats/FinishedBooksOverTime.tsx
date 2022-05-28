@@ -1,4 +1,3 @@
-import { ChartTitle } from '@/components/stats/ChartTitle'
 import ReviewTooltip from '@/components/stats/ReviewTooltip'
 import { Finished } from '@/constants'
 import { Review } from 'goodreads-export/lib/types'
@@ -31,11 +30,7 @@ export const FinishedBooksOverTime = ({
 
   return (
     <ResponsiveContainer>
-      <ScatterChart
-        width={730}
-        height={250}
-        margin={{ top: 40, right: 20, bottom: 20, left: 20 }}
-      >
+      <ScatterChart margin={{ top: 50, right: 20, bottom: 20, left: 0 }}>
         <text
           x='50%'
           y={10}

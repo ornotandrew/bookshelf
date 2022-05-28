@@ -6,6 +6,9 @@ import { NextPage } from 'next'
 import styles from './stats.module.css'
 import { readReviews } from '@/constants'
 import FinishedBooksOverTime from '@/components/stats/FinishedBooksOverTime'
+import Genres from '@/components/stats/Genres'
+import SeriesOverTime from '@/components/stats/SeriesOverTime'
+import Authors from '@/components/stats/Authors'
 
 const Stats: NextPage = () => {
   return (
@@ -21,6 +24,17 @@ const Stats: NextPage = () => {
       </header>
       <section className={styles.FinishedBooksOverTime}>
         <FinishedBooksOverTime reviews={readReviews} />
+      </section>
+      <div className={styles.TopN}>
+        <section className={styles.Genres}>
+          <Genres reviews={readReviews} />
+        </section>
+        <section className={styles.Authors}>
+          <Authors reviews={readReviews} />
+        </section>
+      </div>
+      <section className={styles.SeriesOverTime}>
+        <SeriesOverTime reviews={readReviews} />
       </section>
     </Layout>
   )

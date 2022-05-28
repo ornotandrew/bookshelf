@@ -1,6 +1,9 @@
 import extract from './extract.json'
 import { Review, ReviewTimeline, Series } from 'goodreads-export/lib/types'
-import { reviewsFromExtract, mostRecentlyFinished } from 'goodreads-export/lib/util/transform'
+import {
+  reviewsFromExtract,
+  mostRecentlyFinished,
+} from 'goodreads-export/lib/util/transform'
 
 export type Started<T extends Review> = T & {
   timeline: ReviewTimeline & {
@@ -30,3 +33,12 @@ export const readReviews = reviews
 export const currentlyReading = reviews.filter(
   (r) => r.timeline.started && !r.timeline.finished
 ) as Started<Review>[]
+
+export const colorPallette = [
+  '#268bd2',
+  '#d27426',
+  '#800080',
+  '#ffffe0',
+  '#9dd9d2',
+  '#392f5a',
+]

@@ -1,5 +1,33 @@
+.Header {
+  margin-bottom: var(--space-3);
+}
+
 .FinishedBooksOverTime {
   width: 100%;
   padding: var(--space-3) 0;
   height: 300px;
+}
+
+.TopN {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.Genres {
+  height: 100%;
+  width: 50%;
+  padding: var(--space-3) 0;
+}
+
+.Authors {
+  height: 100%;
+  width: 50%;
+  padding: var(--space-3) 0;
+}
+
+.SeriesOverTime {
+  width: 100%;
+  height: 500px;
+  padding: var(--space-3) 0;
 }

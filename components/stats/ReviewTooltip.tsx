@@ -13,7 +13,7 @@ export const ReviewTooltip = ({ payload }: TooltipProps<any, any>) => {
     throw new Error("Expected a 'review' property on payload.payload")
   }
 
-  return <Review review={review} />
+  return <Review review={review} variant='minimal' showPageCount transparent />
 }
 
 export default ReviewTooltip
