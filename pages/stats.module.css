@@ -10,19 +10,30 @@
 
 .TopN {
   width: 100%;
-  height: 500px;
+  height: 700px;
   display: flex;
+  flex-wrap: wrap;
+
+  --item-height: 50%;
+  --item-width: 100%;
 }
 
+@media (min-width: 550px) {
+  .TopN {
+    height: 350px;
+    --item-height: 100%;
+    --item-width: 50%;
+  }
+}
 .Genres {
-  height: 100%;
-  width: 50%;
+  height: var(--item-height);
+  width: var(--item-width);
   padding: var(--space-3) 0;
 }
 
 .Authors {
-  height: 100%;
-  width: 50%;
+  height: var(--item-height);
+  width: var(--item-width);
   padding: var(--space-3) 0;
 }
 
