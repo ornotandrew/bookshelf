@@ -22,8 +22,8 @@ const Stats: NextPage = () => {
           using <GithubProject user='wraithy' repo='goodreads-export' />.
         </p>
       </header>
-      <section className={styles.FinishedBooksOverTime}>
-        <FinishedBooksOverTime reviews={readReviews} />
+      <section className={styles.SeriesOverTime}>
+        <SeriesOverTime reviews={readReviews} />
       </section>
       <div className={styles.TopN}>
         <section className={styles.Genres}>
@@ -33,8 +33,8 @@ const Stats: NextPage = () => {
           <Authors reviews={readReviews} />
         </section>
       </div>
-      <section className={styles.SeriesOverTime}>
-        <SeriesOverTime reviews={readReviews} />
+      <section className={styles.FinishedBooksOverTime}>
+        <FinishedBooksOverTime reviews={readReviews} />
       </section>
     </Layout>
   )

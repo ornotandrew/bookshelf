@@ -38,7 +38,7 @@ export const FinishedBooksOverTime = ({
           textAnchor='middle'
           dominantBaseline='central'
         >
-          <tspan fontSize='18'>Finished books</tspan>
+          <tspan fontSize='18' fontFamily='Inter, Helvetica Neue, sans-serif'>Finished books</tspan>
         </text>
         <CartesianGrid strokeDasharray='5 5' opacity={0.75} />
         <XAxis

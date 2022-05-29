@@ -2,12 +2,7 @@ import { colorPallette, Finished } from '@/constants'
 import { Review } from 'goodreads-export/lib/types'
 import { DateTime } from 'luxon'
 import { useState } from 'react'
-import {
-  Area,
-  AreaChart,
-  ResponsiveContainer,
-  XAxis,
-} from 'recharts'
+import { Area, AreaChart, ResponsiveContainer, XAxis } from 'recharts'
 
 const oneYearInMillis = 1000 * 60 * 60 * 24 * 365
 const groupByPeriod = oneYearInMillis / 2
@@ -72,19 +67,21 @@ export const SeriesOverTime = ({
 
   return (
     <ResponsiveContainer>
-      <AreaChart data={data} margin={{ top: 50, left: 35, right: 35 }}>
+      <AreaChart data={data} margin={{ top: -50, left: 35, right: 35 }}>
         <text
           x='50%'
-          y={10}
+          y={80}
           fill='black'
           textAnchor='middle'
           dominantBaseline='central'
         >
-          <tspan fontSize='18'>Series</tspan>
+          <tspan fontSize='18' fontFamily='Inter, Helvetica Neue, sans-serif'>
+            Series
+          </tspan>
         </text>
         <text
           x='50%'
-          y={30}
+          y={100}
           fill='var(--color-text-lighten-1)'
           textAnchor='middle'
           dominantBaseline='central'
@@ -102,8 +99,10 @@ export const SeriesOverTime = ({
         />
         {Object.entries(colorBySeriesName).map(([name, color]) => {
           let fill = color
+          let stroke = '#888'
           if (activeSeriesName) {
             fill = activeSeriesName === name ? color : '#fff'
+            stroke = activeSeriesName === name ? 'black' : stroke
           }
 
           return (
@@ -113,6 +112,7 @@ export const SeriesOverTime = ({
               dataKey={name}
               stackId='1'
               fill={fill}
+              stroke={stroke}
               onMouseEnter={() => setActiveSeriesName(name)}
               onMouseLeave={() => setActiveSeriesName(null)}
             />

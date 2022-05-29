@@ -38,7 +38,7 @@ export const colorPallette = [
   '#268bd2',
   '#d27426',
   '#800080',
-  '#ffffe0',
+  '#FFFF99',
   '#9dd9d2',
   '#392f5a',
 ]

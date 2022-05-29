@@ -37,7 +37,7 @@ export const Genres = ({ reviews }: { reviews: Finished<Review>[] }) => {
           textAnchor='middle'
           dominantBaseline='central'
         >
-          <tspan fontSize='18'>Top {topGenreCount} genres</tspan>
+          <tspan fontSize='18' fontFamily='Inter, Helvetica Neue, sans-serif'>Top {topGenreCount} genres</tspan>
         </text>
         <YAxis dataKey='name' type='category' width={180} interval={0} />
         <XAxis dataKey='count' type='number' hide />
