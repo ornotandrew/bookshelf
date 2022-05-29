@@ -38,7 +38,9 @@ export const FinishedBooksOverTime = ({
           textAnchor='middle'
           dominantBaseline='central'
         >
-          <tspan fontSize='18' fontFamily='Inter, Helvetica Neue, sans-serif'>Finished books</tspan>
+          <tspan fontSize='18' fontFamily='Inter, Helvetica Neue, sans-serif'>
+            Finished books
+          </tspan>
         </text>
         <CartesianGrid strokeDasharray='5 5' opacity={0.75} />
         <XAxis
@@ -63,10 +65,7 @@ export const FinishedBooksOverTime = ({
           }}
           tickFormatter={(pages) => (pages < maxPages ? '' : pages)}
         />
-        <Tooltip
-          cursor={{ strokeDasharray: '5 5' }}
-          content={<ReviewTooltip />}
-        />
+        <Tooltip cursor={false} content={<ReviewTooltip />} />
         <Scatter
           name='Finished books'
           data={data}

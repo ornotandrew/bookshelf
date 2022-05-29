@@ -71,7 +71,7 @@ export const SeriesOverTime = ({
         <text
           x='50%'
           y={80}
-          fill='black'
+          fill={'var(--color-text-primary)'}
           textAnchor='middle'
           dominantBaseline='central'
         >
@@ -81,12 +81,18 @@ export const SeriesOverTime = ({
         </text>
         <text
           x='50%'
-          y={100}
-          fill='var(--color-text-lighten-1)'
+          y={105}
+          fill='var(--color-text-primary)'
           textAnchor='middle'
           dominantBaseline='central'
         >
-          <tspan fontSize='14'>{activeSeriesName}</tspan>
+          {activeSeriesName ? (
+            <tspan fontSize='14'>{activeSeriesName}</tspan>
+          ) : (
+            <tspan fontSize='14' fill='var(--color-text-lighten-2)'>
+              {'( Select an area )'}
+            </tspan>
+          )}
         </text>
         <XAxis
           dataKey='__period'
