@@ -1,23 +1,42 @@
 {
   "reviews": [
     {
-      "reviewId": 4607154278,
-      "bookUrl": "https://www.goodreads.com/book/show/8253920-towers-of-midnight",
+      "reviewId": 4757061374,
+      "bookUrl": "https://www.goodreads.com/book/show/16031812-a-memory-of-light",
       "timeline": {
-        "shelved": "2022-03-13",
-        "started": "2022-03-13",
+        "shelved": "2022-06-01",
+        "started": "2022-06-01",
         "finished": null,
         "progress": [
           {
             "percent": 0,
+            "date": "2022-06-01"
+          }
+        ]
+      }
+    },
+    {
+      "reviewId": 4607154278,
+      "bookUrl": "https://www.goodreads.com/book/show/10371118-towers-of-midnight",
+      "timeline": {
+        "shelved": "2022-03-13",
+        "started": "2022-03-13",
+        "finished": "2022-06-01",
+        "progress": [
+          {
+            "percent": 0,
             "date": "2022-03-13"
+          },
+          {
+            "percent": 100,
+            "date": "2022-06-01"
           }
         ]
       }
     },
     {
       "reviewId": 4442529457,
-      "bookUrl": "https://www.goodreads.com/book/show/1166599.The_Gathering_Storm",
+      "bookUrl": "https://www.goodreads.com/book/show/8411648-the-gathering-storm",
       "timeline": {
         "shelved": "2022-01-03",
         "started": "2022-01-03",
@@ -86,7 +105,7 @@
       "timeline": {
         "shelved": "2021-06-03",
         "started": "2021-06-03",
-        "finished": null,
+        "finished": "2022-06-06",
         "progress": [
           {
             "percent": 0,
@@ -103,6 +122,10 @@
           {
             "percent": 52,
             "date": "2021-07-08"
+          },
+          {
+            "percent": 100,
+            "date": "2022-06-06"
           }
         ]
       }
@@ -951,6 +974,76 @@
             "date": "2011-10-01"
           }
         ]
+      }
+    },
+    {
+      "reviewId": 4765758719,
+      "bookUrl": "https://www.goodreads.com/book/show/28257707-the-subtle-art-of-not-giving-a-f-ck",
+      "timeline": {
+        "shelved": "2022-06-05",
+        "started": null,
+        "finished": null,
+        "progress": []
+      }
+    },
+    {
+      "reviewId": 4765746304,
+      "bookUrl": "https://www.goodreads.com/book/show/40121378-atomic-habits",
+      "timeline": {
+        "shelved": "2022-06-05",
+        "started": null,
+        "finished": null,
+        "progress": []
+      }
+    },
+    {
+      "reviewId": 4763427366,
+      "bookUrl": "https://www.goodreads.com/book/show/5617966-a-guide-to-the-good-life",
+      "timeline": {
+        "shelved": "2022-06-04",
+        "started": null,
+        "finished": null,
+        "progress": []
+      }
+    },
+    {
+      "reviewId": 4763425763,
+      "bookUrl": "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow",
+      "timeline": {
+        "shelved": "2022-06-04",
+        "started": null,
+        "finished": null,
+        "progress": []
+      }
+    },
+    {
+      "reviewId": 4763425592,
+      "bookUrl": "https://www.goodreads.com/book/show/10127019-the-lean-startup",
+      "timeline": {
+        "shelved": "2022-06-04",
+        "started": null,
+        "finished": null,
+        "progress": []
+      }
+    },
+    {
+      "reviewId": 4763425065,
+      "bookUrl": "https://www.goodreads.com/book/show/18050143-zero-to-one",
+      "timeline": {
+        "shelved": "2022-06-04",
+        "started": null,
+        "finished": null,
+        "progress": []
+      }
+    },
+    {
+      "reviewId": 4760162941,
+      "bookUrl": "https://www.goodreads.com/book/show/26618156-habits-of-a-happy-brain",
+      "timeline": {
+        "shelved": "2022-06-02",
+        "started": null,
+        "finished": null,
+        "progress": []
       }
     },
     {
@@ -1975,7 +2068,7 @@
     },
     {
       "reviewId": 1690111676,
-      "bookUrl": "https://www.goodreads.com/book/show/5907.The_Hobbit_or_There_and_Back_Again",
+      "bookUrl": "https://www.goodreads.com/book/show/5907.The_Hobbit",
       "timeline": {
         "shelved": "2016-07-06",
         "started": null,
@@ -3055,7 +3148,8 @@
           "Science Fiction Fantasy"
         ],
         [
-          "Audiobook"
+          "Young Adult",
+          "Teen"
         ]
       ]
     },
@@ -3286,10 +3380,10 @@
           "Science Fiction"
         ],
         [
-          "Science Fiction Fantasy"
+          "Audiobook"
         ],
         [
-          "Audiobook"
+          "Science Fiction Fantasy"
         ],
         [
           "Science Fiction",
@@ -3801,7 +3895,7 @@
         "url": "https://www.goodreads.com/series/49073-the-chronicles-of-narnia-publication-order",
         "name": "The Chronicles of Narnia (Publication Order)"
       },
-      "positionInSeries": 5,
+      "positionInSeries": 3,
       "genreHierarchy": [
         [
           "Fantasy"
@@ -4109,11 +4203,11 @@
           "Audiobook"
         ],
         [
-          "Science Fiction Fantasy"
-        ],
-        [
           "Science Fiction",
           "Military Science Fiction"
+        ],
+        [
+          "Science Fiction Fantasy"
         ],
         [
           "War"
@@ -4255,18 +4349,18 @@
           "War"
         ],
         [
+          "Science Fiction Fantasy"
+        ],
+        [
           "Space",
           "Space Opera"
         ],
         [
-          "Science Fiction Fantasy"
+          "Science Fiction",
+          "Military Science Fiction"
         ],
         [
           "Novels"
-        ],
-        [
-          "Science Fiction",
-          "Military Science Fiction"
         ]
       ]
     },
@@ -4303,18 +4397,17 @@
           "War"
         ],
         [
-          "Novels"
-        ],
-        [
           "Space",
           "Space Opera"
+        ],
+        [
+          "Novels"
         ],
         [
           "Science Fiction Fantasy"
         ],
         [
-          "Games",
-          "Gaming"
+          "Space"
         ]
       ]
     },
@@ -4396,16 +4489,16 @@
           "Chick Lit"
         ],
         [
-          "Science Fiction Fantasy"
-        ],
-        [
           "Fantasy"
         ],
         [
-          "Audiobook"
+          "Science Fiction Fantasy"
         ],
         [
           "Romance"
+        ],
+        [
+          "Audiobook"
         ],
         [
           "Paranormal",
@@ -4763,7 +4856,8 @@
           "Middle Grade"
         ],
         [
-          "Fantasy"
+          "Young Adult",
+          "Teen"
         ]
       ]
     },
@@ -5093,11 +5187,11 @@
           "Audiobook"
         ],
         [
-          "Hugo Awards"
-        ],
-        [
           "Science Fiction",
           "Aliens"
+        ],
+        [
+          "Hugo Awards"
         ],
         [
           "Novels"
@@ -5144,10 +5238,10 @@
           "Middle Grade"
         ],
         [
-          "Science Fiction Fantasy"
+          "Classics"
         ],
         [
-          "Classics"
+          "Science Fiction Fantasy"
         ],
         [
           "Science Fiction",
@@ -5242,10 +5336,10 @@
           "Adventure"
         ],
         [
-          "Science Fiction Fantasy"
+          "Audiobook"
         ],
         [
-          "Audiobook"
+          "Science Fiction Fantasy"
         ],
         [
           "Young Adult",
@@ -5380,11 +5474,11 @@
           "Fantasy"
         ],
         [
-          "Audiobook"
-        ],
-        [
           "Space",
           "Space Opera"
+        ],
+        [
+          "Audiobook"
         ],
         [
           "Horror"
@@ -5393,10 +5487,10 @@
           "Mystery"
         ],
         [
-          "Adventure"
+          "Novels"
         ],
         [
-          "Novels"
+          "Adventure"
         ]
       ]
     },
@@ -5491,10 +5585,10 @@
           "Science Fiction Fantasy"
         ],
         [
-          "Young Adult"
+          "Adventure"
         ],
         [
-          "Adventure"
+          "Young Adult"
         ]
       ]
     },
@@ -5737,11 +5831,11 @@
           "Science Fiction Fantasy"
         ],
         [
-          "Novels"
-        ],
-        [
           "War",
           "Military Fiction"
+        ],
+        [
+          "Novels"
         ]
       ]
     },
@@ -5772,10 +5866,10 @@
           "Fantasy"
         ],
         [
-          "Audiobook"
+          "War"
         ],
         [
-          "War"
+          "Audiobook"
         ],
         [
           "Space",
@@ -5836,7 +5930,8 @@
           "Space"
         ],
         [
-          "Novels"
+          "Games",
+          "Gaming"
         ]
       ]
     },
@@ -5880,11 +5975,11 @@
           "Science Fiction Fantasy"
         ],
         [
-          "Novels"
-        ],
-        [
           "Science Fiction",
           "Military Science Fiction"
+        ],
+        [
+          "Novels"
         ]
       ]
     },
@@ -5924,11 +6019,11 @@
           "Audiobook"
         ],
         [
-          "Space",
-          "Space Opera"
+          "War"
         ],
         [
-          "War"
+          "Space",
+          "Space Opera"
         ],
         [
           "Science Fiction Fantasy"
@@ -5972,13 +6067,14 @@
           "Space Opera"
         ],
         [
-          "Novels"
-        ],
-        [
           "Science Fiction Fantasy"
         ],
         [
-          "Horror"
+          "Novels"
+        ],
+        [
+          "War",
+          "Military Fiction"
         ]
       ]
     },
@@ -6016,16 +6112,17 @@
           "Space Opera"
         ],
         [
-          "Novels"
+          "War"
         ],
         [
-          "War"
+          "Novels"
         ],
         [
           "Science Fiction Fantasy"
         ],
         [
-          "Thriller"
+          "Literature",
+          "21st Century"
         ]
       ]
     },
@@ -6072,7 +6169,7 @@
         ],
         [
           "Science Fiction",
-          "Military Science Fiction"
+          "Dystopia"
         ]
       ]
     },
@@ -6118,8 +6215,8 @@
           "Science Fiction Fantasy"
         ],
         [
-          "Space",
-          "Space Opera"
+          "Literature",
+          "21st Century"
         ]
       ]
     },
@@ -6306,19 +6403,19 @@
           "Epic Fantasy"
         ],
         [
-          "Literature"
+          "Audiobook"
         ],
         [
           "Novels"
         ],
         [
-          "Audiobook"
+          "Literature"
         ]
       ]
     },
-    "https://www.goodreads.com/book/show/5907.The_Hobbit_or_There_and_Back_Again": {
-      "url": "https://www.goodreads.com/book/show/5907.The_Hobbit_or_There_and_Back_Again",
-      "title": "The Hobbit, or There and Back Again",
+    "https://www.goodreads.com/book/show/5907.The_Hobbit": {
+      "url": "https://www.goodreads.com/book/show/5907.The_Hobbit",
+      "title": "The Hobbit",
       "description": "In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort.\nWritten for J.R.R. Tolkien’s own children, The Hobbit met with instant critical acclaim when it was first published in 1937. Now recognized as a timeless classic, this introduction to the hobbit Bilbo Baggins, the wizard Gandalf, Gollum, and the spectacular world of Middle-earth recounts of the adventures of a reluctant hero, a powerful and dangerous ring, and the cruel dragon Smaug the Magnificent. The text in this 372-page paperback edition is based on that first published in Great Britain by Collins Modern Classics (1998), and includes a note on the text by Douglas A. Anderson (2001).",
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546071216i/5907.jpg",
       "authorUrl": "https://www.goodreads.com/author/show/656983.J_R_R_Tolkien",
@@ -6416,7 +6513,7 @@
     "https://www.goodreads.com/book/show/62291.A_Storm_of_Swords": {
       "url": "https://www.goodreads.com/book/show/62291.A_Storm_of_Swords",
       "title": "A Storm of Swords",
-      "description": "An alternate cover for this isbn can be found here.\n\nHere is the third volume in George R.R. Martin's magnificent cycle of novels that includes A Game of Thrones and A Clash of Kings. Together, this series comprises a genuine masterpiece of modern fantasy, destined to stand as one of the great achievements of imaginative fiction.\n\nOf the five contenders for power, one is dead, another in disfavor, and still the wars rage as alliances are made and broken. Joffrey sits on the Iron Throne, the uneasy ruler of the Seven Kingdoms. His most bitter rival, Lord Stannis, stands defeated and disgraced, victim of the sorceress who holds him in her thrall. Young Robb still rules the North from the fortress of Riverrun. Meanwhile, making her way across a blood-drenched continent is the exiled queen, Daenerys, mistress of the only three dragons still left in the world. And as opposing forces manoeuver for the final showdown, an army of barbaric wildlings arrives from the outermost limits of civilization, accompanied by a horde of mythical Others—a supernatural army of the living dead whose animated corpses are unstoppable. As the future of the land hangs in the balance, no one will rest until the Seven Kingdoms have exploded in a veritable storm of swords...",
+      "description": "an alternate cover for this ISBN can be found here\n\nHere is the third volume in George R.R. Martin's magnificent cycle of novels that includes A Game of Thrones and A Clash of Kings. Together, this series comprises a genuine masterpiece of modern fantasy, destined to stand as one of the great achievements of imaginative fiction.\n\nOf the five contenders for power, one is dead, another in disfavor, and still the wars rage as alliances are made and broken. Joffrey sits on the Iron Throne, the uneasy ruler of the Seven Kingdoms. His most bitter rival, Lord Stannis, stands defeated and disgraced, victim of the sorceress who holds him in her thrall. Young Robb still rules the North from the fortress of Riverrun. Meanwhile, making her way across a blood-drenched continent is the exiled queen, Daenerys, mistress of the only three dragons still left in the world. And as opposing forces manoeuver for the final showdown, an army of barbaric wildlings arrives from the outermost limits of civilization, accompanied by a horde of mythical Others—a supernatural army of the living dead whose animated corpses are unstoppable. As the future of the land hangs in the balance, no one will rest until the Seven Kingdoms have exploded in a veritable storm of swords...",
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571318786i/62291.jpg",
       "authorUrl": "https://www.goodreads.com/author/show/346732.George_R_R_Martin",
       "isbn": 9780553573428,
@@ -6644,15 +6741,16 @@
           "Science Fiction Fantasy"
         ],
         [
-          "Space",
-          "Space Opera"
-        ],
-        [
-          "War"
-        ],
-        [
           "Science Fiction",
           "Military Science Fiction"
+        ],
+        [
+          "Literature",
+          "21st Century"
+        ],
+        [
+          "Space",
+          "Space Opera"
         ]
       ]
     },
@@ -6783,11 +6881,11 @@
           "Magic"
         ],
         [
-          "Young Adult",
-          "Young Adult Fantasy"
+          "Anthologies"
         ],
         [
-          "Anthologies"
+          "Young Adult",
+          "Young Adult Fantasy"
         ],
         [
           "Fantasy",
@@ -6881,17 +6979,18 @@
           "Fantasy"
         ],
         [
-          "War"
+          "Science Fiction",
+          "Military Science Fiction"
         ],
         [
           "Science Fiction Fantasy"
         ],
         [
-          "Science Fiction",
-          "Military Science Fiction"
+          "War"
         ],
         [
-          "Novels"
+          "Literature",
+          "21st Century"
         ],
         [
           "War",
@@ -6937,14 +7036,14 @@
           "Adult"
         ],
         [
+          "Fantasy"
+        ],
+        [
           "Fantasy",
           "Magic"
         ],
         [
           "Epic"
-        ],
-        [
-          "Fantasy"
         ]
       ]
     },
@@ -7031,19 +7130,18 @@
           "War"
         ],
         [
-          "Space",
-          "Space Opera"
-        ],
-        [
           "Science Fiction",
           "Military Science Fiction"
+        ],
+        [
+          "Space",
+          "Space Opera"
         ],
         [
           "Science Fiction Fantasy"
         ],
         [
-          "War",
-          "Military Fiction"
+          "Novels"
         ]
       ]
     },
@@ -7087,7 +7185,8 @@
           "Military Science Fiction"
         ],
         [
-          "Science Fiction Fantasy"
+          "Literature",
+          "21st Century"
         ],
         [
           "War",
@@ -7132,14 +7231,14 @@
           "War"
         ],
         [
+          "Literature",
+          "21st Century"
+        ],
+        [
+          "Adventure"
+        ],
+        [
           "Science Fiction Fantasy"
-        ],
-        [
-          "Space",
-          "Space Opera"
-        ],
-        [
-          "Novels"
         ]
       ]
     },
@@ -7277,8 +7376,7 @@
           "Adult"
         ],
         [
-          "Fantasy",
-          "High Fantasy"
+          "Novels"
         ],
         [
           "Fantasy",
@@ -7417,17 +7515,18 @@
           "Space Opera"
         ],
         [
-          "Science Fiction Fantasy"
+          "Literature",
+          "21st Century"
         ],
         [
-          "Novels"
+          "Adventure"
         ],
         [
           "Science Fiction",
           "Military Science Fiction"
         ],
         [
-          "Adventure"
+          "Novels"
         ]
       ]
     },
@@ -7461,20 +7560,21 @@
           "Audiobook"
         ],
         [
-          "Science Fiction Fantasy"
+          "Novels"
         ],
         [
           "War"
         ],
         [
-          "Novels"
+          "Science Fiction",
+          "Military Science Fiction"
         ],
         [
           "Literature",
           "21st Century"
         ],
         [
-          "Horror"
+          "Science Fiction Fantasy"
         ]
       ]
     },
@@ -7598,17 +7698,17 @@
           "Audiobook"
         ],
         [
-          "Science Fiction Fantasy"
+          "Action"
         ],
         [
           "Science Fiction",
           "Military Science Fiction"
         ],
         [
-          "Action"
+          "Novels"
         ],
         [
-          "Novels"
+          "Science Fiction Fantasy"
         ]
       ]
     },
@@ -7642,11 +7742,11 @@
           "Fantasy"
         ],
         [
-          "Action"
-        ],
-        [
           "Science Fiction",
           "Military Science Fiction"
+        ],
+        [
+          "Action"
         ],
         [
           "Science Fiction Fantasy"
@@ -7784,11 +7884,11 @@
           "Africa"
         ],
         [
-          "Contemporary"
-        ],
-        [
           "Young Adult",
           "Coming Of Age"
+        ],
+        [
+          "Contemporary"
         ],
         [
           "School Stories",
@@ -7799,8 +7899,7 @@
           "South Africa"
         ],
         [
-          "Young Adult",
-          "Teen"
+          "Realistic Fiction"
         ]
       ]
     },
@@ -7847,7 +7946,8 @@
           "Boarding School"
         ],
         [
-          "Drama"
+          "Young Adult",
+          "Teen"
         ],
         [
           "Literature",
@@ -8220,10 +8320,10 @@
           "High Fantasy"
         ],
         [
-          "Adult"
+          "Young Adult"
         ],
         [
-          "Young Adult"
+          "Adult"
         ],
         [
           "Dark"
@@ -8244,7 +8344,7 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1307959785i/10790290.jpg",
       "authorUrl": "https://www.goodreads.com/author/show/2063919.Michael_J_Sullivan",
       "isbn": 9780316187749,
-      "pageCount": 649,
+      "pageCount": 691,
       "series": {
         "url": "https://www.goodreads.com/series/96465-the-riyria-revelations",
         "name": "The Riyria Revelations"
@@ -9046,10 +9146,10 @@
           "Audiobook"
         ],
         [
-          "Adventure"
+          "Adult"
         ],
         [
-          "Adult"
+          "Adventure"
         ],
         [
           "Young Adult"
@@ -9375,11 +9475,11 @@
           "Fiction"
         ],
         [
-          "Science Fiction"
-        ],
-        [
           "Childrens",
           "Middle Grade"
+        ],
+        [
+          "Science Fiction"
         ],
         [
           "Childrens"
@@ -9496,8 +9596,7 @@
           "Urban Fantasy"
         ],
         [
-          "Young Adult",
-          "Young Adult Fantasy"
+          "Audiobook"
         ]
       ]
     },
@@ -9738,12 +9837,12 @@
           "Adventure"
         ],
         [
-          "Fantasy",
-          "High Fantasy"
-        ],
-        [
           "Science Fiction",
           "Steampunk"
+        ],
+        [
+          "Fantasy",
+          "High Fantasy"
         ],
         [
           "Childrens",
@@ -10249,7 +10348,7 @@
         "url": "https://www.goodreads.com/series/49073-the-chronicles-of-narnia-publication-order",
         "name": "The Chronicles of Narnia (Publication Order)"
       },
-      "positionInSeries": 2,
+      "positionInSeries": 1,
       "genreHierarchy": [
         [
           "Fantasy"
@@ -10297,7 +10396,7 @@
         "url": "https://www.goodreads.com/series/49073-the-chronicles-of-narnia-publication-order",
         "name": "The Chronicles of Narnia (Publication Order)"
       },
-      "positionInSeries": 4,
+      "positionInSeries": 2,
       "genreHierarchy": [
         [
           "Fantasy"
@@ -10344,7 +10443,7 @@
         "url": "https://www.goodreads.com/series/49073-the-chronicles-of-narnia-publication-order",
         "name": "The Chronicles of Narnia (Publication Order)"
       },
-      "positionInSeries": 6,
+      "positionInSeries": 4,
       "genreHierarchy": [
         [
           "Fantasy"
@@ -10391,7 +10490,7 @@
         "url": "https://www.goodreads.com/series/49073-the-chronicles-of-narnia-publication-order",
         "name": "The Chronicles of Narnia (Publication Order)"
       },
-      "positionInSeries": 3,
+      "positionInSeries": 5,
       "genreHierarchy": [
         [
           "Fantasy"
@@ -10438,7 +10537,7 @@
         "url": "https://www.goodreads.com/series/49073-the-chronicles-of-narnia-publication-order",
         "name": "The Chronicles of Narnia (Publication Order)"
       },
-      "positionInSeries": 1,
+      "positionInSeries": 6,
       "genreHierarchy": [
         [
           "Fantasy"
@@ -10456,11 +10555,11 @@
           "Childrens"
         ],
         [
-          "Adventure"
-        ],
-        [
           "Childrens",
           "Middle Grade"
+        ],
+        [
+          "Adventure"
         ],
         [
           "Christian"
@@ -10642,11 +10741,11 @@
           "Fiction"
         ],
         [
-          "Historical",
-          "Historical Fiction"
+          "Adventure"
         ],
         [
-          "Adventure"
+          "Historical",
+          "Historical Fiction"
         ],
         [
           "Childrens"
@@ -10768,7 +10867,7 @@
     "https://www.goodreads.com/book/show/51638604-viper-s-daughter": {
       "url": "https://www.goodreads.com/book/show/51638604-viper-s-daughter",
       "title": "Viper's Daughter",
-      "description": "Äntligen – en ny bok i Vargbröder-serien! Nu kommer fortsättningen som ingen vågade hoppas på.\n\nEn pojke. En varg. Legenden fortsätter. Själslukarens barn är den sjunde boken i succéserien som fängslade en hel generation. \nUnder två somrar har Torak och Renn levt lyckliga i skogen tillsammans med vargflocken. Men deras lycka krossas när Renn inser att Torak är i fara – och att hotet kommer från henne själv. \nNär Renn mystiskt försvinner måste Torak och Ulv ge sig allra längst norrut för att hitta henne. De möter en karg värld med utsvultna isbjörnar och livsfara bakom varje hörn. Och de måste kämpa mot en fiende som är mer ondskefull än någon de tidigare mött …\n\nVargbröder-serien är en makalös succé! Den rafflande spänningen och den fascinerande stenåldersmiljön är unik.",
+      "description": "A boy. A wolf. The legend lives on. \n\nDazzling entertainment, seamless story-telling, book seven in the bestselling Wolf Brother series is set in a world of myth, menace, natural magic and exhilarating adventure.\n\n\n A boy. A wolf. The legend lives on.\n\nFor two summers Torak and Renn have been living in the Forest with their faithful pack-brother, Wolf. But their happiness is shattered when Renn realizes Torak is in danger - and she's the threat.\n\nWhen she mysteriously disappears, Torak and Wolf brave the Far North to find her. At the mercy of the Sea Mother and haunted by ravenous ice bears, their quest leads them to the Edge of the World. There they must face an enemy more evil than any they've encountered.\n\nViper's Daughter plunges you back into the Stone-Age world of Torak, Renn and Wolf: a world of demons, Hidden People and exhilarating adventure which has entranced millions of readers.\n\nViper's Daughter is the seventh book in the award-winning series that began with Wolf Brother, selling over 3 million copies in 36 territories. Like them it can be read as a standalone story.\n\n\n\nPRAISE FOR VIPER'S DAUGHTER\n\n'What rich, dazzling, immersive storytelling... The best book I have read this year by a country mile. (By a wild arctic length of many wolf lopes, I suppose I should say).' - Hilary McKay, author of The Skylarks' War\n\n'Michelle is in a league of her own with this series and what luck for us all that she hasn't finished with Torak, Renn and Wolf's world yet.' - Abi Elphinstone, author of Rumblestar\n\n'Viper's Daughter is sharp, striking, and loaded with the wisdom of the deep past. I am in awe of Paver's accomplishment.' - Sophie Anderson, author of The House with Chicken Legs\n\n'Skillful, satisfying, and minutely researched, this powerful evocation of an ancient world is vivid in its imagery and captivating in its excitement.' - Adrienne Byrne, Muswell Hill Children's Bookshop",
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1573098585l/51638604.jpg",
       "authorUrl": "https://www.goodreads.com/author/show/119755.Michelle_Paver",
       "isbn": null,
@@ -10835,20 +10934,20 @@
           "Fiction"
         ],
         [
+          "Adventure"
+        ],
+        [
           "Childrens"
         ],
         [
           "Young Adult"
         ],
         [
-          "Adventure"
+          "Historical",
+          "Historical Fiction"
         ],
         [
           "Audiobook"
-        ],
-        [
-          "Historical",
-          "Historical Fiction"
         ],
         [
           "Suspense"
@@ -11009,14 +11108,371 @@
         ]
       ]
     },
-    "https://www.goodreads.com/book/show/8253920-towers-of-midnight": {
-      "url": "https://www.goodreads.com/book/show/8253920-towers-of-midnight",
-      "title": "Towers of Midnight",
-      "description": "The end draws near....\n\nThe Last Battle has started. The seals on the Dark One’s prison are crumbling. The Pattern itself is unraveling, and the armies of the Shadow have begun to boil out of the Blight.\n\nThe sun has begun to set upon the Third Age.\n\nPerrin Aybara is now hunted by specters from his past: Whitecloaks, a slayer of wolves, and the responsibilities of leadership. All the while, an unseen foe is slowly pulling a noose tight around his neck. To prevail, he must seek answers in Tel’aran’rhiod and find a way--at long last--to master the wolf within him or lose himself to it forever\n\nMeanwhile, Matrim Cauthon prepares for the most difficult challenge of his life. The creatures beyond the stone gateways--the Aelfinn and the Eelfinn--have confused him, taunted him, and left him hanged, his memory stuffed with bits and pieces of other men’s lives. He had hoped that his last confrontation with them would be the end of it, but the Wheel weaves as the Wheel wills. The time is coming when he will again have to dance with the Snakes and the Foxes, playing a game that cannot be won. The Tower of Ghenjei awaits, and its secrets will reveal the fate of a friend long lost.\n\nThis penultimate novel of Robert Jordan’s #1 New York Times bestselling series--the second of three based on materials he left behind when he died in 2007--brings dramatic and compelling developments to many threads in the Pattern. The end draws near.\n\nDovie’andi se tovya sagain. It’s time to toss the dice.",
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1358109459i/8253920.jpg",
+    "https://www.goodreads.com/book/show/28257707-the-subtle-art-of-not-giving-a-f-ck": {
+      "url": "https://www.goodreads.com/book/show/28257707-the-subtle-art-of-not-giving-a-f-ck",
+      "title": "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
+      "description": "Alternate cover edition of ISBN 9780062457738\n\nIn this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be \"positive\" all the time so that we can truly become better, happier people.\n\nFor decades, we’ve been told that positive thinking is the key to a happy, rich life. \"F**k positivity,\" Mark Manson says. \"Let’s be honest, shit is f**ked and we have to live with it.\" In his wildly popular Internet blog, Manson doesn’t sugarcoat or equivocate. He tells it like it is—a dose of raw, refreshing, honest truth that is sorely lacking today. The Subtle Art of Not Giving a F**k is his antidote to the coddling, let’s-all-feel-good mindset that has infected American society and spoiled a generation, rewarding them with gold medals just for showing up.\n\nManson makes the argument, backed both by academic research and well-timed poop jokes, that improving our lives hinges not on our ability to turn lemons into lemonade, but on learning to stomach lemons better. Human beings are flawed and limited—\"not everybody can be extraordinary, there are winners and losers in society, and some of it is not fair or your fault.\" Manson advises us to get to know our limitations and accept them. Once we embrace our fears, faults, and uncertainties, once we stop running and avoiding and start confronting painful truths, we can begin to find the courage, perseverance, honesty, responsibility, curiosity, and forgiveness we seek.\n\nThere are only so many things we can give a f**k about so we need to figure out which ones really matter, Manson makes clear. While money is nice, caring about what you do with your life is better, because true wealth is about experience. A much-needed grab-you-by-the-shoulders-and-look-you-in-the-eye moment of real-talk, filled with entertaining stories and profane, ruthless humor, The Subtle Art of Not Giving a F**k is a refreshing slap for a generation to help them lead contented, grounded lives.",
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1465761302i/28257707.jpg",
+      "authorUrl": "https://www.goodreads.com/author/show/8529755.Mark_Manson",
+      "isbn": null,
+      "pageCount": 212,
+      "series": {
+        "url": "https://www.goodreads.com/series/344128-mark-manson-collection",
+        "name": "Mark Manson Collection"
+      },
+      "positionInSeries": 1,
+      "genreHierarchy": [
+        [
+          "Nonfiction"
+        ],
+        [
+          "Self Help"
+        ],
+        [
+          "Psychology"
+        ],
+        [
+          "Audiobook"
+        ],
+        [
+          "Self Help",
+          "Personal Development"
+        ],
+        [
+          "Philosophy"
+        ],
+        [
+          "Business"
+        ],
+        [
+          "Humor"
+        ],
+        [
+          "Adult"
+        ],
+        [
+          "Unfinished"
+        ]
+      ]
+    },
+    "https://www.goodreads.com/book/show/40121378-atomic-habits": {
+      "url": "https://www.goodreads.com/book/show/40121378-atomic-habits",
+      "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+      "description": "No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.\n\nIf you're having trouble changing your habits, the problem isn't you. The problem is your system. Bad habits repeat themselves again and again not because you don't want to change, but because you have the wrong system for change. You do not rise to the level of your goals. You fall to the level of your systems. Here, you'll get a proven system that can take you to new heights.\n\nClear is known for his ability to distill complex topics into simple behaviors that can be easily applied to daily life and work. Here, he draws on the most proven ideas from biology, psychology, and neuroscience to create an easy-to-understand guide for making good habits inevitable and bad habits impossible. Along the way, readers will be inspired and entertained with true stories from Olympic gold medalists, award-winning artists, business leaders, life-saving physicians, and star comedians who have used the science of small habits to master their craft and vault to the top of their field.\n\nLearn how to:\n*  make time for new habits (even when life gets crazy);\n*  overcome a lack of motivation and willpower;\n*  design your environment to make success easier;\n*  get back on track when you fall off course;\n...and much more.\n\nAtomic Habits will reshape the way you think about progress and success, and give you the tools and strategies you need to transform your habits--whether you are a team looking to win a championship, an organization hoping to redefine an industry, or simply an individual who wishes to quit smoking, lose weight, reduce stress, or achieve any other goal.",
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535115320i/40121378.jpg",
+      "authorUrl": "https://www.goodreads.com/author/show/7327369.James_Clear",
+      "isbn": null,
+      "pageCount": 319,
+      "genreHierarchy": [
+        [
+          "Nonfiction"
+        ],
+        [
+          "Self Help"
+        ],
+        [
+          "Psychology"
+        ],
+        [
+          "Self Help",
+          "Personal Development"
+        ],
+        [
+          "Productivity"
+        ],
+        [
+          "Audiobook"
+        ],
+        [
+          "Business"
+        ],
+        [
+          "Leadership"
+        ],
+        [
+          "Science"
+        ],
+        [
+          "Health"
+        ]
+      ]
+    },
+    "https://www.goodreads.com/book/show/5617966-a-guide-to-the-good-life": {
+      "url": "https://www.goodreads.com/book/show/5617966-a-guide-to-the-good-life",
+      "title": "A Guide to the Good Life: The Ancient Art of Stoic Joy",
+      "description": "One of the great fears many of us face is that despite all our effort and striving, we will discover at the end that we have wasted our life. In A Guide to the Good Life, William B. Irvine plumbs the wisdom of Stoic philosophy, one of the most popular and successful schools of thought in ancient Rome, and shows how its insight and advice are still remarkably applicable to modern lives.\n In A Guide to the Good Life, Irvine offers a refreshing presentation of Stoicism, showing how this ancient philosophy can still direct us toward a better life. Using the psychological insights and the practical techniques of the Stoics, Irvine offers a roadmap for anyone seeking to avoid the feelings of chronic dissatisfaction that plague so many of us. Irvine looks at various Stoic techniques for attaining tranquility and shows how to put these techniques to work in our own life. As he does so, he describes his own experiences practicing Stoicism and offers valuable first-hand advice for anyone wishing to live better by following in the footsteps of these ancient philosophers. Readers learn how to minimize worry, how to let go of the past and focus our efforts on the things we can control, and how to deal with insults, grief, old age, and the distracting temptations of fame and fortune. We learn from Marcus Aurelius the importance of prizing only things of true value, and from Epictetus we learn how to be more content with what we have.\n Finally, A Guide to the Good Life shows readers how to become thoughtful observers of their own life. If we watch ourselves as we go about our daily business and later reflect on what we saw, we can better identify the sources of distress and eventually avoid that pain in our life. By doing this, the Stoics thought, we can hope to attain a truly joyful life.",
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1547348819i/5617966.jpg",
+      "authorUrl": "https://www.goodreads.com/author/show/246154.William_B_Irvine",
+      "isbn": 9780195374612,
+      "pageCount": 326,
+      "genreHierarchy": [
+        [
+          "Philosophy"
+        ],
+        [
+          "Nonfiction"
+        ],
+        [
+          "Self Help"
+        ],
+        [
+          "Psychology"
+        ],
+        [
+          "Self Help",
+          "Personal Development"
+        ],
+        [
+          "Spirituality"
+        ],
+        [
+          "History"
+        ],
+        [
+          "Audiobook"
+        ],
+        [
+          "Business"
+        ],
+        [
+          "Health"
+        ]
+      ]
+    },
+    "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow": {
+      "url": "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow",
+      "title": "Thinking, Fast and Slow",
+      "description": "In the highly anticipated Thinking, Fast and Slow, Kahneman takes us on a groundbreaking tour of the mind and explains the two systems that drive the way we think. System 1 is fast, intuitive, and emotional; System 2 is slower, more deliberative, and more logical. Kahneman exposes the extraordinary capabilities—and also the faults and biases—of fast thinking, and reveals the pervasive influence of intuitive impressions on our thoughts and behavior. The impact of loss aversion and overconfidence on corporate strategies, the difficulties of predicting what will make us happy in the future, the challenges of properly framing risks at work and at home, the profound effect of cognitive biases on everything from playing the stock market to planning the next vacation—each of these can be understood only by knowing how the two systems work together to shape our judgments and decisions.\n\nEngaging the reader in a lively conversation about how we think, Kahneman reveals where we can and cannot trust our intuitions and how we can tap into the benefits of slow thinking. He offers practical and enlightening insights into how choices are made in both our business and our personal lives—and how we can use different techniques to guard against the mental glitches that often get us into trouble. Thinking, Fast and Slow will transform the way you think about thinking.",
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1317793965i/11468377.jpg",
+      "authorUrl": "https://www.goodreads.com/author/show/72401.Daniel_Kahneman",
+      "isbn": 9780374275631,
+      "pageCount": 499,
+      "genreHierarchy": [
+        [
+          "Nonfiction"
+        ],
+        [
+          "Psychology"
+        ],
+        [
+          "Science"
+        ],
+        [
+          "Self Help"
+        ],
+        [
+          "Business"
+        ],
+        [
+          "Economics"
+        ],
+        [
+          "Self Help",
+          "Personal Development"
+        ],
+        [
+          "Philosophy"
+        ],
+        [
+          "Audiobook"
+        ],
+        [
+          "Unfinished"
+        ]
+      ]
+    },
+    "https://www.goodreads.com/book/show/10127019-the-lean-startup": {
+      "url": "https://www.goodreads.com/book/show/10127019-the-lean-startup",
+      "title": "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses",
+      "description": "Most startups fail. But many of those failures are preventable. The Lean Startup is a new approach being adopted across the globe, changing the way companies are built and new products are launched. \n\nEric Ries defines a startup as an organization dedicated to creating something new under conditions of extreme uncertainty. This is just as true for one person in a garage or a group of seasoned professionals in a Fortune 500 boardroom. What they have in common is a mission to penetrate that fog of uncertainty to discover a successful path to a sustainable business.\n\n\n\nThe Lean Startup approach fosters companies that are both more capital efficient and that leverage human creativity more effectively. Inspired by lessons from lean manufacturing, it relies on \"validated learning,\" rapid scientific experimentation, as well as a number of counter-intuitive practices that shorten product development cycles, measure actual progress without resorting to vanity metrics, and learn what customers really want. It enables a company to shift directions with agility, altering plans inch by inch, minute by minute.\n\nRather than wasting time creating elaborate business plans, The Lean Startup offers entrepreneurs - in companies of all sizes - a way to test their vision continuously, to adapt and adjust before it's too late. Ries provides a scientific approach to creating and managing successful startups in a age when companies need to innovate more than ever.",
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1629999184i/10127019.jpg",
+      "authorUrl": "https://www.goodreads.com/author/show/278960.Eric_Ries",
+      "isbn": 9780307887894,
+      "pageCount": 299,
+      "genreHierarchy": [
+        [
+          "Business"
+        ],
+        [
+          "Nonfiction"
+        ],
+        [
+          "Business",
+          "Entrepreneurship"
+        ],
+        [
+          "Business",
+          "Management"
+        ],
+        [
+          "Buisness"
+        ],
+        [
+          "Leadership"
+        ],
+        [
+          "Science",
+          "Technology"
+        ],
+        [
+          "Self Help"
+        ],
+        [
+          "Economics"
+        ],
+        [
+          "Productivity"
+        ]
+      ]
+    },
+    "https://www.goodreads.com/book/show/18050143-zero-to-one": {
+      "url": "https://www.goodreads.com/book/show/18050143-zero-to-one",
+      "title": "Zero to One: Notes on Startups, or How to Build the Future",
+      "description": "If you want to build a better future, you must believe in secrets.\n\nThe great secret of our time is that there are still uncharted frontiers to explore and new inventions to create. In Zero to One, legendary entrepreneur and investor Peter Thiel shows how we can find singular ways to create those new things. \n\nThiel begins with the contrarian premise that we live in an age of technological stagnation, even if we’re too distracted by shiny mobile devices to notice. Information technology has improved rapidly, but there is no reason why progress should be limited to computers or Silicon Valley. Progress can be achieved in any industry or area of business. It comes from the most important skill that every leader must master: learning to think for yourself.\n\nDoing what someone else already knows how to do takes the world from 1 to n, adding more of something familiar. But when you do something new, you go from 0 to 1. The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won’t make a search engine. Tomorrow’s champions will not win by competing ruthlessly in today’s marketplace. They will escape competition altogether, because their businesses will be unique. \n\nZero to One presents at once an optimistic view of the future of progress in America and a new way of thinking about innovation: it starts by learning to ask the questions that lead you to find value in unexpected places.",
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630663027i/18050143.jpg",
+      "authorUrl": "https://www.goodreads.com/author/show/8474721.Peter_Thiel",
+      "isbn": 9780804139298,
+      "pageCount": 195,
+      "genreHierarchy": [
+        [
+          "Business"
+        ],
+        [
+          "Nonfiction"
+        ],
+        [
+          "Business",
+          "Entrepreneurship"
+        ],
+        [
+          "Self Help"
+        ],
+        [
+          "Economics"
+        ],
+        [
+          "Science",
+          "Technology"
+        ],
+        [
+          "Business",
+          "Management"
+        ],
+        [
+          "Leadership"
+        ],
+        [
+          "Buisness"
+        ],
+        [
+          "Economics",
+          "Finance"
+        ]
+      ]
+    },
+    "https://www.goodreads.com/book/show/26618156-habits-of-a-happy-brain": {
+      "url": "https://www.goodreads.com/book/show/26618156-habits-of-a-happy-brain",
+      "title": "Habits of a Happy Brain: Retrain Your Brain to Boost Your Serotonin, Dopamine, Oxytocin,  Endorphin Levels",
+      "description": "A revolutionary approach to enhancing your happiness level!\n\nGet ready to boost your happiness in just 45 days! Habits of a Happy Brain shows you how to retrain your brain to turn on the chemicals that make you happy. Each page offers simple activities that help you understand the roles of your “happy chemicals”—serotonin, dopamine, oxytocin, and endorphin. You’ll also learn how to build new habits by rerouting the electricity in your brain to flow down a new pathway, making it even easier to trigger these happy chemicals and increase feelings of satisfaction when you need them most. Filled with dozens of exercises that will help you reprogram your brain, Habits of a Happy Brain shows you how to live a happier, healthier life!",
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442819041i/26618156.jpg",
+      "authorUrl": "https://www.goodreads.com/author/show/998365.Loretta_Graziano_Breuning",
+      "isbn": 9781440590504,
+      "pageCount": 238,
+      "genreHierarchy": [
+        [
+          "Psychology"
+        ],
+        [
+          "Nonfiction"
+        ],
+        [
+          "Self Help"
+        ],
+        [
+          "Science"
+        ],
+        [
+          "Health"
+        ],
+        [
+          "Biology",
+          "Neuroscience"
+        ],
+        [
+          "Self Help",
+          "Personal Development"
+        ],
+        [
+          "Neuroscience",
+          "Brain"
+        ],
+        [
+          "Health",
+          "Mental Health"
+        ],
+        [
+          "Science",
+          "Biology"
+        ]
+      ]
+    },
+    "https://www.goodreads.com/book/show/16031812-a-memory-of-light": {
+      "url": "https://www.goodreads.com/book/show/16031812-a-memory-of-light",
+      "title": "A Memory of Light",
+      "description": "‘And it came to pass in those days, as it had come before and would come again, that the Dark lay heavy on the land and weighed down the hearts of men, and the green things failed, and hope died.’ – From Charal Drianaan te Calamon, The Cycle of the Dragon.\n\nIn the Field of Merrilor the rulers of the nations gather to join behind Rand al’Thor, or to stop him from his plan to break the seals on the Dark One’s prison – which may be a sign of his madness, or the last hope of humankind. Egwene, the Amyrlin Seat, leans toward the former.\n\nIn Andor, the Trollocs seize Caemlyn.\n\nIn the wolf dream, Perrin Aybara battles Slayer.\n\nApproaching Ebou Dar, Mat Cauthon plans to visit his wife Tuon, now Fortuona, Empress of the Seanchan.\n\nAll humanity is in peril – and the outcome will be decided in Shayol Ghul itself. The Wheel is turning, and the Age is coming to its end. The Last Battle will determine the fate of the world . . .\n\nFor twenty years The Wheel of Time has enthralled more than forty million readers in over thirty-two languages. A MEMORY OF LIGHT brings this majestic fantasy creation to its richly satisfying conclusion.\n\nWorking from notes and partials left by Robert Jordan when he died in 2007, and consulting with Jordan’s widow, who edited all of Jordan’s books, established fantasy writer Brandon Sanderson has recreated the vision Jordan left behind.",
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1485938837i/16031812.jpg",
       "authorUrl": "https://www.goodreads.com/author/show/6252.Robert_Jordan",
-      "isbn": 9780765325945,
-      "pageCount": 863,
+      "isbn": null,
+      "pageCount": 1025,
+      "series": {
+        "url": "https://www.goodreads.com/series/41526-the-wheel-of-time",
+        "name": "The Wheel of Time"
+      },
+      "positionInSeries": 14,
+      "genreHierarchy": [
+        [
+          "Fantasy"
+        ],
+        [
+          "Fiction"
+        ],
+        [
+          "Fantasy",
+          "Epic Fantasy"
+        ],
+        [
+          "Fantasy",
+          "High Fantasy"
+        ],
+        [
+          "Science Fiction Fantasy"
+        ],
+        [
+          "Adventure"
+        ],
+        [
+          "Audiobook"
+        ],
+        [
+          "Epic"
+        ],
+        [
+          "Young Adult"
+        ],
+        [
+          "Fantasy",
+          "Magic"
+        ]
+      ]
+    },
+    "https://www.goodreads.com/book/show/10371118-towers-of-midnight": {
+      "url": "https://www.goodreads.com/book/show/10371118-towers-of-midnight",
+      "title": "Towers of Midnight",
+      "description": "In Towers of Midnight, the Last Battle has started. The seals on the Dark One's prison are crumbling. The Pattern itself is unraveling, and the armies of the Shadow have begun to boil out of the Blight.\n\nThe sun has begun to set upon the Third Age.\n\nPerrin Aybara is now hunted by specters from his past: Whitecloaks, a slayer of wolves, and the responsibilities of leadership. All the while, an unseen foe is slowly pulling a noose tight around his neck. To prevail, he must seek answers in Tel'aran'rhiod and find a way--at long last--to master the wolf within him or lose himself to it forever.\n\nMeanwhile, Matrim Cauthon prepares for the most difficult challenge of his life. The creatures beyond the stone gateways--the Aelfinn and the Eelfinn--have confused him, taunted him, and left him hanged, his memory stuffed with bits and pieces of other men's lives. He had hoped that his last confrontation with them would be the end of it, but the Wheel weaves as the Wheel wills. The time is coming when he will again have to dance with the Snakes and the Foxes, playing a game that cannot be won. The Tower of Ghenjei awaits, and its secrets will reveal the fate of a friend long lost.\n\nDovie'andi se tovya sagain. It's time to toss the dice.",
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328312225i/10371118.jpg",
+      "authorUrl": "https://www.goodreads.com/author/show/6252.Robert_Jordan",
+      "isbn": null,
+      "pageCount": 977,
       "series": {
         "url": "https://www.goodreads.com/series/41526-the-wheel-of-time",
         "name": "The Wheel of Time"
@@ -11058,14 +11514,14 @@
         ]
       ]
     },
-    "https://www.goodreads.com/book/show/1166599.The_Gathering_Storm": {
-      "url": "https://www.goodreads.com/book/show/1166599.The_Gathering_Storm",
+    "https://www.goodreads.com/book/show/8411648-the-gathering-storm": {
+      "url": "https://www.goodreads.com/book/show/8411648-the-gathering-storm",
       "title": "The Gathering Storm",
-      "description": "The Wheel of Time turns and Ages come and go, leaving memories that become legend. Legend fades to myth, and even myth is long forgotten when the Age that gave it birth returns again. In the Third Age, an Age of Prophecy, the World and Time themselves hang in the balance. What was, what will be, and what is, may yet fall under the Shadow.\n\nTarmon Gai'don, the Last Battle, looms. And mankind is not ready.\n\nThe final volume of the Wheel of Time, A Memory of Light,  was partially written by Robert Jordan before his untimely passing in 2007. Brandon Sanderson, New York Times bestselling author of the Mistborn books, and now Stormlight Archive, among others, was chosen by Jordan's editor--his wife, Harriet McDougal--to complete the final volume, later expanded to three books.\n\nIn this epic novel, Robert Jordan's international bestselling series begins its dramatic conclusion. Rand al'Thor, the Dragon Reborn, struggles to unite a fractured network of kingdoms and alliances in preparation for the Last Battle. As he attempts to halt the Seanchan encroachment northward--wishing he could form at least a temporary truce with the invaders--his allies watch in terror the shadow that seems to be growing within the heart of the Dragon Reborn himself.\n\nEgwene al'Vere, the Amyrlin Seat of the rebel Aes Sedai, is a captive of the White Tower and subject to the whims of their tyrannical leader. As days tick toward the Seanchan attack she knows is imminent, Egwene works to hold together the disparate factions of Aes Sedai while providing leadership in the face of increasing uncertainty and despair. Her fight will prove the mettle of the Aes Sedai, and her conflict will decide the future of the White Tower--and possibly the world itself.",
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1647270090i/1166599.jpg",
+      "description": "The Wheel of Time turns and Ages come and go, leaving memories that become legend. Legend fades to myth, and even myth is long forgotten when the Age that gave it birth returns again. In the Third Age, an Age of Prophecy, the World and Time themselves hang in the balance. What was, what will be, and what is, may yet fall under the Shadow.\n\nTarmon Gai'don, the Last Battle, looms. And mankind is not ready.\n\nThe final volume of the Wheel of Time, A Memory of Light, was partially written by Robert Jordan before his untimely passing in 2007. Brandon Sanderson, New York Times bestselling author of the Mistborn books, and now Stormlight Archive, among others, was chosen by Jordan's editor--his wife, Harriet McDougal--to complete the final volume, later expanded to three books.\n\nIn this epic novel, Robert Jordan's international bestselling series begins its dramatic conclusion. Rand al'Thor, the Dragon Reborn, struggles to unite a fractured network of kingdoms and alliances in preparation for the Last Battle. As he attempts to halt the Seanchan encroachment northward--wishing he could form at least a temporary truce with the invaders--his allies watch in terror the shadow that seems to be growing within the heart of the Dragon Reborn himself.\n\nEgwene al'Vere, the Amyrlin Seat of the rebel Aes Sedai, is a captive of the White Tower and subject to the whims of their tyrannical leader. As days tick toward the Seanchan attack she knows is imminent, Egwene works to hold together the disparate factions of Aes Sedai while providing leadership in the face of increasing uncertainty and despair. Her fight will prove the mettle of the Aes Sedai, and her conflict will decide the future of the White Tower--and possibly the world itself.",
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1396218056i/8411648.jpg",
       "authorUrl": "https://www.goodreads.com/author/show/6252.Robert_Jordan",
-      "isbn": 9780765302304,
-      "pageCount": 783,
+      "isbn": null,
+      "pageCount": 861,
       "series": {
         "url": "https://www.goodreads.com/series/41526-the-wheel-of-time",
         "name": "The Wheel of Time"
@@ -11093,10 +11549,10 @@
           "Epic"
         ],
         [
-          "Adventure"
+          "Audiobook"
         ],
         [
-          "Audiobook"
+          "Adventure"
         ],
         [
           "Fantasy",
@@ -11475,8 +11931,9 @@
       "birthDate": null,
       "deathDate": null,
       "genres": [
+        "Thriller",
         "Science Fiction",
-        "Thriller"
+        "Tie In"
       ],
       "websiteUrl": "https://jswallow.com/",
       "twitterUrl": "http://www.twitter.com/jmswallow"
@@ -11832,6 +12289,82 @@
       ],
       "websiteUrl": "http://www.robinhobb.com",
       "twitterUrl": "http://www.twitter.com/Robinhobb"
+    },
+    "https://www.goodreads.com/author/show/8529755.Mark_Manson": {
+      "url": "https://www.goodreads.com/author/show/8529755.Mark_Manson",
+      "name": "Mark Manson",
+      "birthDate": null,
+      "deathDate": null,
+      "genres": [
+        "Self Help"
+      ],
+      "websiteUrl": "http://www.markmanson.net",
+      "twitterUrl": "http://www.twitter.com/IAmMarkManson"
+    },
+    "https://www.goodreads.com/author/show/7327369.James_Clear": {
+      "url": "https://www.goodreads.com/author/show/7327369.James_Clear",
+      "name": "James Clear",
+      "birthDate": null,
+      "deathDate": null,
+      "genres": null,
+      "websiteUrl": "http://jamesclear.com",
+      "twitterUrl": "http://www.twitter.com/JamesClear"
+    },
+    "https://www.goodreads.com/author/show/246154.William_B_Irvine": {
+      "url": "https://www.goodreads.com/author/show/246154.William_B_Irvine",
+      "name": "William B. Irvine",
+      "birthDate": null,
+      "deathDate": null,
+      "genres": [
+        "Philosophy"
+      ],
+      "websiteUrl": "http://williambirvine.com/",
+      "twitterUrl": null
+    },
+    "https://www.goodreads.com/author/show/72401.Daniel_Kahneman": {
+      "url": "https://www.goodreads.com/author/show/72401.Daniel_Kahneman",
+      "name": "Daniel Kahneman",
+      "birthDate": "1934-03-05",
+      "deathDate": null,
+      "genres": [
+        "Social Sciences"
+      ],
+      "websiteUrl": "http://www.princeton.edu/~kahneman/",
+      "twitterUrl": null
+    },
+    "https://www.goodreads.com/author/show/278960.Eric_Ries": {
+      "url": "https://www.goodreads.com/author/show/278960.Eric_Ries",
+      "name": "Eric Ries",
+      "birthDate": null,
+      "deathDate": null,
+      "genres": null,
+      "websiteUrl": null,
+      "twitterUrl": null
+    },
+    "https://www.goodreads.com/author/show/8474721.Peter_Thiel": {
+      "url": "https://www.goodreads.com/author/show/8474721.Peter_Thiel",
+      "name": "Peter Thiel",
+      "birthDate": "1967-10-11",
+      "deathDate": null,
+      "genres": [
+        "Business"
+      ],
+      "websiteUrl": null,
+      "twitterUrl": "http://www.twitter.com/peterthiel"
+    },
+    "https://www.goodreads.com/author/show/998365.Loretta_Graziano_Breuning": {
+      "url": "https://www.goodreads.com/author/show/998365.Loretta_Graziano_Breuning",
+      "name": "Loretta Graziano Breuning",
+      "birthDate": "1953-10-30",
+      "deathDate": null,
+      "genres": [
+        "Health",
+        "Mind & Body",
+        "Social Sciences",
+        "Self Help"
+      ],
+      "websiteUrl": "http://www.innermammalinstitute.org",
+      "twitterUrl": null
     }
   },
   "seriesByUrl": {
@@ -11911,7 +12444,7 @@
       "url": "https://www.goodreads.com/series/44427-his-dark-materials",
       "works": {
         "primary": 3,
-        "total": 8
+        "total": 9
       },
       "name": "His Dark Materials"
     },
@@ -11950,8 +12483,8 @@
     "https://www.goodreads.com/series/40340-redwall": {
       "url": "https://www.goodreads.com/series/40340-redwall",
       "works": {
-        "primary": 26,
-        "total": 32
+        "primary": 22,
+        "total": 33
       },
       "name": "Redwall"
     },
@@ -12158,8 +12691,8 @@
     "https://www.goodreads.com/series/40346-the-dresden-files": {
       "url": "https://www.goodreads.com/series/40346-the-dresden-files",
       "works": {
-        "primary": 20,
-        "total": 38
+        "primary": 21,
+        "total": 40
       },
       "name": "The Dresden Files"
     },
@@ -12218,6 +12751,14 @@
         "total": 4
       },
       "name": "The Edge Chronicles: The Twig Saga"
+    },
+    "https://www.goodreads.com/series/344128-mark-manson-collection": {
+      "url": "https://www.goodreads.com/series/344128-mark-manson-collection",
+      "works": {
+        "primary": 2,
+        "total": 2
+      },
+      "name": "Mark Manson Collection"
     }
   },
   "genreUrls": {
@@ -12279,8 +12820,6 @@
     "Yaoi": "https://www.goodreads.com/genres/yaoi",
     "Boys Love": "https://www.goodreads.com/genres/boys-love",
     "Horror": "https://www.goodreads.com/genres/horror",
-    "Games": "https://www.goodreads.com/genres/games",
-    "Gaming": "https://www.goodreads.com/genres/gaming",
     "Shapeshifters": "https://www.goodreads.com/genres/shapeshifters",
     "Werewolves": "https://www.goodreads.com/genres/werewolves",
     "Womens Fiction": "https://www.goodreads.com/genres/womens-fiction",
@@ -12288,7 +12827,10 @@
     "Young Adult Paranormal": "https://www.goodreads.com/genres/young-adult-paranormal",
     "Aliens": "https://www.goodreads.com/genres/aliens",
     "Hugo Awards": "https://www.goodreads.com/genres/hugo-awards",
+    "Games": "https://www.goodreads.com/genres/games",
+    "Gaming": "https://www.goodreads.com/genres/gaming",
     "Anthologies": "https://www.goodreads.com/genres/anthologies",
+    "21st Century": "https://www.goodreads.com/genres/21st-century",
     "Arthurian": "https://www.goodreads.com/genres/arthurian",
     "Fairy Tales": "https://www.goodreads.com/genres/fairy-tales",
     "Retellings": "https://www.goodreads.com/genres/retellings",
@@ -12299,7 +12841,6 @@
     "Comedy": "https://www.goodreads.com/genres/comedy",
     "Comic Fantasy": "https://www.goodreads.com/genres/comic-fantasy",
     "Cyberpunk": "https://www.goodreads.com/genres/cyberpunk",
-    "21st Century": "https://www.goodreads.com/genres/21st-century",
     "Cultural": "https://www.goodreads.com/genres/cultural",
     "Africa": "https://www.goodreads.com/genres/africa",
     "Southern Africa": "https://www.goodreads.com/genres/southern-africa",
@@ -12309,7 +12850,6 @@
     "Boarding School": "https://www.goodreads.com/genres/boarding-school",
     "Realistic Fiction": "https://www.goodreads.com/genres/realistic-fiction",
     "Contemporary": "https://www.goodreads.com/genres/contemporary",
-    "Drama": "https://www.goodreads.com/genres/drama",
     "African Literature": "https://www.goodreads.com/genres/african-literature",
     "Dark Fantasy": "https://www.goodreads.com/genres/dark-fantasy",
     "Crime": "https://www.goodreads.com/genres/crime",
@@ -12333,6 +12873,18 @@
     "Asia": "https://www.goodreads.com/genres/asia",
     "Time Travel": "https://www.goodreads.com/genres/time-travel",
     "Suspense": "https://www.goodreads.com/genres/suspense",
-    "Survival": "https://www.goodreads.com/genres/survival"
+    "Survival": "https://www.goodreads.com/genres/survival",
+    "Philosophy": "https://www.goodreads.com/genres/philosophy",
+    "Unfinished": "https://www.goodreads.com/genres/unfinished",
+    "Science": "https://www.goodreads.com/genres/science",
+    "Health": "https://www.goodreads.com/genres/health",
+    "Spirituality": "https://www.goodreads.com/genres/spirituality",
+    "History": "https://www.goodreads.com/genres/history",
+    "Technology": "https://www.goodreads.com/genres/technology",
+    "Finance": "https://www.goodreads.com/genres/finance",
+    "Biology": "https://www.goodreads.com/genres/biology",
+    "Neuroscience": "https://www.goodreads.com/genres/neuroscience",
+    "Brain": "https://www.goodreads.com/genres/brain",
+    "Mental Health": "https://www.goodreads.com/genres/mental-health"
   }
 }
