@@ -30,17 +30,16 @@ export const FinishedBooksOverTime = ({
 
   return (
     <ResponsiveContainer>
-      <ScatterChart margin={{ top: 50, right: 20, bottom: 20, left: 0 }}>
+      <ScatterChart margin={{ top: 50, right: 0, bottom: 20, left: -20 }}>
         <text
           x='50%'
           y={10}
           fill='black'
           textAnchor='middle'
           dominantBaseline='central'
+          fontFamily='Inter, Helvetica Neue, sans-serif'
         >
-          <tspan fontSize='18' fontFamily='Inter, Helvetica Neue, sans-serif'>
-            Finished books
-          </tspan>
+          <tspan fontSize='18'>Finished books</tspan>
         </text>
         <CartesianGrid strokeDasharray='5 5' opacity={0.75} />
         <XAxis
@@ -62,6 +61,8 @@ export const FinishedBooksOverTime = ({
             value: 'Pages',
             angle: -90,
             position: 'center',
+            dx: 5,
+            fill: 'var(--color-text-lighten-2)',
           }}
           tickFormatter={(pages) => (pages < maxPages ? '' : pages)}
         />

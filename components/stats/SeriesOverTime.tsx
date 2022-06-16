@@ -67,7 +67,7 @@ export const SeriesOverTime = ({
 
   return (
     <ResponsiveContainer>
-      <AreaChart data={data} margin={{ top: -50, left: 35, right: 35 }}>
+      <AreaChart data={data} margin={{ top: -50, left: -50, right: 0 }}>
         <text
           x='50%'
           y={80}
