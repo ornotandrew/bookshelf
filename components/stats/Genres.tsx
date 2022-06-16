@@ -27,7 +27,7 @@ export const Genres = ({ reviews }: { reviews: Finished<Review>[] }) => {
       <BarChart
         data={data}
         layout='vertical'
-        margin={{ top: 50, right: 50 }}
+        margin={{ top: 60, right: 50 }}
         barCategoryGap={2}
       >
         <text
@@ -36,8 +36,17 @@ export const Genres = ({ reviews }: { reviews: Finished<Review>[] }) => {
           fill='black'
           textAnchor='middle'
           dominantBaseline='central'
+          fontFamily='Inter, Helvetica Neue, sans-serif'
         >
-          <tspan fontSize='18' fontFamily='Inter, Helvetica Neue, sans-serif'>Top {topGenreCount} genres</tspan>
+          <tspan fontSize='18'>Top {topGenreCount} genres</tspan>
+          <tspan
+            fontSize='14'
+            x='50%'
+            dy='22px'
+            fill='var(--color-text-lighten-2)'
+          >
+            by books read
+          </tspan>
         </text>
         <YAxis dataKey='name' type='category' width={180} interval={0} />
         <XAxis dataKey='count' type='number' hide />
