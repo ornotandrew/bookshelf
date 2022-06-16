@@ -13,7 +13,6 @@ import type {
 import A from '@/components/A'
 import GithubProject from '@/components/GithubProject'
 import Layout from '@/components/Layout'
-import { Nav } from '@/components/Nav'
 
 const authorsByUrl = readReviews.reduce<Record<string, Author>>(
   (acc, review) =>
@@ -105,7 +104,6 @@ const Books: NextPage = () => {
   return (
     <Layout>
       <header>
-        <Nav />
         <h1>Books I&apos;ve read</h1>
         <p>
           This data was pulled from my{' '}

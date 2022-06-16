@@ -1,7 +1,6 @@
 import A from '@/components/A'
 import GithubProject from '@/components/GithubProject'
 import Layout from '@/components/Layout'
-import { Nav } from '@/components/Nav'
 import { NextPage } from 'next'
 import styles from './stats.module.css'
 import { readReviews } from '@/constants'
@@ -14,7 +13,6 @@ const Stats: NextPage = () => {
   return (
     <Layout>
       <header className={styles.Header}>
-        <Nav />
         <h1 className={styles.PageTitle}>Stats</h1>
         <p>
           This data was pulled from my{' '}

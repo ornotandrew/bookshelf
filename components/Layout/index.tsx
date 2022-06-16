@@ -1,3 +1,4 @@
+import { Nav } from '@/components/Nav'
 import styles from './index.module.css'
 
 export const Layout = ({
@@ -8,7 +9,10 @@ export const Layout = ({
   className?: string
 }) => {
   return (
-    <div className={[styles.Container, className].join(' ')}>{children}</div>
+      
+      <div className={[styles.Container, className].join(' ')}>
+<Nav />
+        {children}</div>
   )
 }
 

@@ -1,10 +1,10 @@
 .Container {
-  padding: var(--space-2);
+  padding: 0 var(--space-2);
   background-color: var(--color-background);
 }
 
 @media (min-width: 600px) {
   .Container {
-    padding: var(--space-2) 20%;
+    padding: 0 20%;
   }
 }

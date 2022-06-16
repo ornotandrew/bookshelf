@@ -5,13 +5,11 @@ import A from '@/components/A'
 import GithubProject from '@/components/GithubProject'
 import { currentlyReading } from '@/constants'
 import Review from '@/components/Review'
-import { Nav } from '@/components/Nav'
 
 const Home: NextPage = () => {
   return (
     <Layout>
       <header className={styles.Header}>
-        <Nav />
         <h1 className={styles.PageTitle}>My Bookshelf</h1>
         <p>
           I think bookshelves are great. They can reveal so much about the

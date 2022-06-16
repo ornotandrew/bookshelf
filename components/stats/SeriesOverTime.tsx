@@ -2,7 +2,7 @@ import { colorPallette, Finished } from '@/constants'
 import { Review } from 'goodreads-export/lib/types'
 import { DateTime } from 'luxon'
 import { useState } from 'react'
-import { Area, AreaChart, ResponsiveContainer, XAxis } from 'recharts'
+import { Area, AreaChart, ResponsiveContainer, XAxis, YAxis } from 'recharts'
 
 const oneYearInMillis = 1000 * 60 * 60 * 24 * 365
 const groupByPeriod = oneYearInMillis / 2
@@ -94,6 +94,17 @@ export const SeriesOverTime = ({
             </tspan>
           )}
         </text>
+        <YAxis
+          tick={false}
+          axisLine={false}
+          label={{
+            value: 'Pages read →',
+            angle: -90,
+            dx: 35,
+            position: 'center',
+            fill: 'var(--color-text-lighten-2)',
+          }}
+        />
         <XAxis
           dataKey='__period'
           name='Date'

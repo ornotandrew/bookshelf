@@ -12,7 +12,7 @@ const links = [
 export const Nav = () => {
   const router = useRouter()
   return (
-    <nav className={styles.Links}>
+    <nav className={styles.Nav}>
       <ul>
         {links.map(({ href, label }) => (
           <li key={href}>
