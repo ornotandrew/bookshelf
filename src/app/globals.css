@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  /* --background: #ffffff; */
+  /* --foreground: #171717; */
+
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@theme {
+  --color-neon-light-blue: #9ce7ff;
+  --color-neon-dark-blue: #89acff;
+  --color-neon-purple: #c599ff;
+  --shadow-neon-glow:
+    0 -1px 3px 1px var(--color-neon-light-blue),
+    -1px 0px 3px 1px var(--color-neon-dark-blue),
+    1px 0px 3px 1px var(--color-neon-dark-blue),
+    0 1px 3px 1px var(--color-neon-purple);
+}
+
+/* @media (prefers-color-scheme: dark) { */
+/*   :root { */
+/*     --background: #0a0a0a; */
+/*     --foreground: #ededed; */
+/*   } */
+/* } */
+
+
+[type="search"]::-webkit-search-decoration,
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-results-button,
+[type="search"]::-webkit-search-results-decoration {
+  filter: grayscale(100%);
+}

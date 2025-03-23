@@ -1,0 +1,86 @@
+# Next.js, Tailwind, and shadcn/ui Project Rules
+
+## Project Structure
+- Use the `src` directory for all source code
+- Place components in `src/components`
+- Place pages in `src/app` (App Router)
+- Place utilities in `src/lib`
+- Place types in `src/types`
+
+## Next.js Guidelines
+- Use the App Router (src/app directory)
+- The site is a statically generated site
+- Keep pages and layouts in the app directory
+- Use route groups for organization
+- Implement proper metadata for SEO
+
+## Tailwind CSS Guidelines
+- Use Tailwind's utility classes directly in components
+- Follow mobile-first responsive design
+- Use custom colors defined in tailwind.config.js
+- Group related utility classes logically
+- Maintain consistent spacing using Tailwind's spacing scale
+
+## shadcn/ui Guidelines
+- Install components using the CLI: `npx shadcn-ui@latest add [component-name]`
+- Place shadcn components in `src/components/ui`
+- Customize components in `src/components/ui/[component-name].tsx`
+- Use the provided theme configuration
+- Maintain consistent styling with the design system
+- Extend components using composition rather than modification
+
+## Component Structure
+```tsx
+// Example component structure
+import { cn } from "@/lib/utils"
+
+interface ComponentProps {
+  className?: string
+  children?: React.ReactNode
+}
+
+export function Component({ className, children }: ComponentProps) {
+  return (
+    <div className={cn("base-styles", className)}>
+      {children}
+    </div>
+  )
+}
+```
+
+## Styling Conventions
+- Use Tailwind's utility classes for layout and spacing
+- Use shadcn components for UI elements
+- Maintain consistent spacing using Tailwind's scale
+- Use CSS variables for theme values
+- Follow the established color palette
+
+## Best Practices
+- Keep components small and focused
+- Use TypeScript for type safety
+- Implement proper error boundaries
+- Follow accessibility guidelines
+- Use proper semantic HTML
+- Maintain consistent naming conventions
+- Document complex logic and components
+
+## Development Workflow
+1. Create new components in appropriate directories
+2. Use shadcn CLI for UI components
+3. Style with Tailwind utilities
+4. Test components in isolation
+5. Document any new patterns or conventions
+
+## Performance Guidelines
+- Use proper image optimization
+- Implement code splitting
+- Optimize bundle size
+- Use proper caching strategies
+- Monitor performance metrics
+
+## Testing
+- Write unit tests for components
+- Test accessibility
+- Test responsive behavior
+- Test edge cases
+- Maintain good test coverage 
