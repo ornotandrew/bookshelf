@@ -9,10 +9,6 @@ export async function generateStaticParams() {
   }));
 }
 
-type BookPageParams = {
-  params: { id: string };
-};
-
 function Cover({
   review,
   className = "",
@@ -72,8 +68,12 @@ function Author({
   );
 }
 
-export default function Book({ params }: BookPageParams) {
-  const { id } = params;
+export default async function Book({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
   const review = readReviews.find((r) => r.reviewId === Number(id))!;
 
   return (
@@ -136,7 +136,7 @@ export default function Book({ params }: BookPageParams) {
           <div className="min-w-[320px] mb-6">
             <h2 className="text-lg font-semibold mb-2">Genres</h2>
             <span className={`inline-block text-gray-400`}>
-              {review.book.genres.join(', ')}
+              {review.book.genres.join(", ")}
             </span>
           </div>
           <hr className="mb-6 border-1 border-gray-400" />
