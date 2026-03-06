@@ -1,31 +1,27 @@
-import Image from "next/image";
 import { Review as ReviewType } from "goodreads-export/lib/types";
-import { Started } from "@/constants";
-import Link from "next/link";
+import { Started } from "../data/constants";
 
 export const BookCover = ({ review }: { review: Started<ReviewType> }) => {
   return (
-    <Link href={`/book/${review.reviewId}`}>
+    <a href={`/book/${review.reviewId}`}>
       <div
         className={
-          "w-[300px] h-[180px] min-w-[300px] min-h-[180px] p-[1px] rounded-[9px] bg-gray-600 transition duration-300 hover:shadow-neon-glow"
+          "w-[300px] h-[180px] min-w-[300px] min-h-[180px] p-[1px] rounded-[9px] bg-gray-600 transition duration-300 hover:shadow-[0_0_20px_rgba(38,139,210,0.5)]"
         }
       >
         <div className="relative overflow-hidden bg-black rounded-lg w-full h-full">
           {/* Background image aligned to the right */}
           <div className="ml-[90px] absolute inset-0 flex justify-end">
-            <Image
+            <img
               src={review.book.imageUrl}
               alt={`Cover of ${review.book.title}`}
-              fill
-              className="object-cover object-right"
-              priority
+              className="object-cover object-right w-full h-full"
             />
           </div>
 
           {/* Gradient overlay - fades from black on left to transparent on right */}
           <div
-            className="absolute inset-0 bg-gradient-to-r from-black to-transparent from-30% to-90%"
+            className="absolute inset-0 bg-gradient-to-r from-black to-transparent from-[30%] to-[90%]"
             aria-hidden="true"
           />
 
@@ -52,6 +48,6 @@ export const BookCover = ({ review }: { review: Started<ReviewType> }) => {
           </div>
         </div>
       </div>
-    </Link>
+    </a>
   );
 };

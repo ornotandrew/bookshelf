@@ -3,7 +3,7 @@ import {
   reviewsFromExtract,
   mostRecentlyFinished,
 } from "goodreads-export/lib/util/transform";
-import extract from "../extract.json";
+import extract from "./extract.json";
 
 export type Started<T extends Review> = T & {
   timeline: ReviewTimeline & {

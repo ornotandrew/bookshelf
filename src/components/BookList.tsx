@@ -1,7 +1,7 @@
 "use client";
 
 import { BookCover } from "@/components/BookCover";
-import { readReviews } from "@/constants";
+import { readReviews } from "../data/constants";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useState, useMemo } from "react";

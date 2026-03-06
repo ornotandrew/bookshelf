@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BookList from '../components/BookList';
+---
+
+<Layout title="My Bookshelf">
+	<main class="min-h-screen bg-background text-foreground">
+		<h1 class="text-3xl font-bold text-center pt-6">My Bookshelf</h1>
+		<BookList client:load />
+	</main>
+</Layout>
