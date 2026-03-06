@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/bookshelf/_next/static/chunks/c04e7b9bd236c6e0.js","/bookshelf/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
+3:I[97367,["/bookshelf/_next/static/chunks/c04e7b9bd236c6e0.js","/bookshelf/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"uuhREaODq4rGc4zqO81bh","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Bookshelf"}],["$","meta","1",{"name":"description","content":"An alternate UI for my Goodreads data"}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
