@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import "./globals.css";
-import { NavLink } from "@/components/NavLink";
-import Image from "next/image";
-import booksIcon from "../../public/books.svg";
+import { NavBar } from "@/components/NavBar";
+import { NoiseOverlay } from "@/components/NoiseOverlay";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains",
   subsets: ["latin"],
 });
 
@@ -23,6 +21,14 @@ export const metadata: Metadata = {
   description,
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: "cover",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,26 +37,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen h-screen flex flex-col bg-background text-foreground`}
+        className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} antialiased w-screen h-screen flex flex-col bg-[#0d0b09] text-[#e8e6e1] font-sans`}
       >
-        <nav className="flex items-center p-4 border-b border-gray-600">
-          <Image
-            priority
-            src={booksIcon}
-            alt={description}
-            width={32}
-            height={32}
-          />
-          <ul className="flex space-x-8 ml-8">
-            <li>
-              <NavLink href="/" text="Books" />
-            </li>
-            {/* <li>
-              <NavLink href="/stats" text="Stats" />
-            </li> */}
-          </ul>
-        </nav>
-        <main className="flex-1 overflow-auto">{children}</main>
+        {/* Background layers */}
+        <div className="fixed inset-0 bg-gradient z-0 pointer-events-none" />
+        <NoiseOverlay />
+        <div className="fixed inset-0 bg-vignette z-0 pointer-events-none" />
+        <NavBar />
+        <main id="top" className="relative z-10 flex-1 overflow-auto">{children}</main>
       </body>
     </html>
   );
