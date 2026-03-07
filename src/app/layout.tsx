@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "@/components/NavBar";
+import { NoiseOverlay } from "@/components/NoiseOverlay";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space",
@@ -40,6 +41,7 @@ export default function RootLayout({
       >
         {/* Background layers */}
         <div className="fixed inset-0 bg-gradient z-0 pointer-events-none" />
+        <NoiseOverlay />
         <div className="fixed inset-0 bg-vignette z-0 pointer-events-none" />
         <NavBar />
         <main id="top" className="relative z-10 flex-1 overflow-auto">{children}</main>
