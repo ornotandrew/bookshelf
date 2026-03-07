@@ -8,7 +8,7 @@ export const BookCover = ({ review }: { review: Started<ReviewType> }) => {
     <Link href={`/book/${review.reviewId}`}>
       <div
         className={
-          "w-[300px] h-[180px] min-w-[300px] min-h-[180px] p-[1px] rounded-[9px] bg-gray-600 transition duration-300 hover:shadow-neon-glow"
+          "w-[300px] h-[180px] min-w-[300px] min-h-[180px] p-[1px] rounded-[9px] bg-[#2a2520] transition duration-300 hover:shadow-warm-glow"
         }
       >
         <div className="relative overflow-hidden bg-black rounded-lg w-full h-full">
