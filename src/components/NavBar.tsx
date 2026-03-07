@@ -12,7 +12,7 @@ export function NavBar() {
       <nav className="relative z-10 flex items-center justify-between p-4">
         <a
           href="https://andrewvr.dev"
-          className="text-sm text-[#6b6b7a] hover:text-white/60 transition-colors font-mono"
+          className="text-sm text-[#8a847a] hover:text-white/60 transition-colors font-mono"
         >
           ← Home
         </a>
@@ -31,7 +31,7 @@ export function NavBar() {
     <nav className="relative z-10 flex items-center justify-between p-4">
       <Link
         href="/"
-        className="text-sm text-[#6b6b7a] hover:text-white/60 transition-colors font-mono"
+        className="text-sm text-[#8a847a] hover:text-white/60 transition-colors font-mono"
       >
         ← Bookshelf
       </Link>

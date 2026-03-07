@@ -88,12 +88,12 @@ export default function BookList({ className = "" }: BookListProps) {
             placeholder="Search by book, author, series, or genre..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-[#0f0f14] border-[#1a1a24] text-[#e8e8ed] placeholder:text-[#6b6b7a]/60 font-mono text-base pr-8"
+            className="w-full bg-[#161210] border-[#2a2520] text-[#e8e6e1] placeholder:text-[#8a847a]/60 font-mono text-base pr-8"
           />
           {searchQuery && (
             <button
               onClick={() => setSearchQuery("")}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-[#6b6b7a] hover:text-[#e8e8ed] transition-colors text-xs"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-[#8a847a] hover:text-[#e8e6e1] transition-colors text-xs"
             >
               ✕
             </button>
