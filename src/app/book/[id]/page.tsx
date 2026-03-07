@@ -25,7 +25,7 @@ function Cover({
             width={300}
             src={review.book.imageUrl}
             alt={`Cover of ${review.book.title}`}
-            className="w-full rounded-lg shadow-lg"
+            className="w-full rounded-lg shadow-lg border border-[#2a2520]"
           />
         </div>
       )}
@@ -41,12 +41,12 @@ function Author({
   className?: string;
 }) {
   return (
-    <div className={`border-1 border-gray-400 p-4 rounded-lg ${className}`}>
-      <h2 className="text-lg font-semibold mb-2">About the Author</h2>
-      <p className="font-medium">{review.book.author.name}</p>
+    <div className={`border border-[#2a2520] p-4 rounded-lg bg-[#161210] ${className}`}>
+      <h2 className="text-lg font-semibold mb-2 text-[#e8e6e1]">About the Author</h2>
+      <p className="font-medium text-[#e8e6e1]">{review.book.author.name}</p>
 
       {review.book.author.birthDate && (
-        <p className="text-sm text-gray-500 mb-2">
+        <p className="text-sm text-[#8a847a] mb-2">
           {review.book.author.birthDate}
           {review.book.author.deathDate && ` - ${review.book.author.deathDate}`}
         </p>
@@ -60,8 +60,8 @@ function Author({
 
       {review.book.author.genres && review.book.author.genres.length > 0 && (
         <div>
-          <p className="text-sm text-gray-500">Known for</p>
-          <p>{review.book.author.genres.join(", ")}</p>
+          <p className="text-sm text-[#8a847a]">Known for</p>
+          <p className="text-[#e8e6e1]">{review.book.author.genres.join(", ")}</p>
         </div>
       )}
     </div>
@@ -81,14 +81,14 @@ export default async function Book({
       <div className="flex flex-col md:flex-row gap-8">
         {/* Main Content Area */}
         <div className="md:w-2/3">
-          <h1 className="text-3xl font-bold mb-2">
+          <h1 className="text-3xl font-bold mb-2 text-[#e8e6e1]">
             {review.book.title}
-            <span className="font-thin text-gray-400">{" by "}</span>
+            <span className="font-thin text-[#8a847a]">{" by "}</span>
             {review.book.author.name}
           </h1>
 
           {review.book.series && (
-            <p className="text-xl text-gray-400 mb-4">
+            <p className="text-xl text-[#8a847a] mb-4">
               {review.book.series.name}{" "}
               {review.book.positionInSeries &&
                 `(Book ${review.book.positionInSeries})`}
@@ -108,25 +108,25 @@ export default async function Book({
           </div>
 
           {/* Reading Timeline */}
-          <div className="min-w-[320px] p-4 rounded-lg mb-6 border-1 border-gray-400">
-            <h2 className="text-lg font-semibold mb-2">Reading Timeline</h2>
+          <div className="min-w-[320px] p-4 rounded-lg mb-6 border border-[#2a2520] bg-[#161210]">
+            <h2 className="text-lg font-semibold mb-2 text-[#e8e6e1]">Reading Timeline</h2>
             <div className="grid grid-cols-3 gap-4">
               {review.timeline.shelved && (
                 <div>
-                  <p className="text-sm text-gray-500">Shelved</p>
-                  <p>{review.timeline.shelved}</p>
+                  <p className="text-sm text-[#8a847a]">Shelved</p>
+                  <p className="text-[#e8e6e1]">{review.timeline.shelved}</p>
                 </div>
               )}
               {review.timeline.started && (
                 <div>
-                  <p className="text-sm text-gray-500">Started</p>
-                  <p>{review.timeline.started}</p>
+                  <p className="text-sm text-[#8a847a]">Started</p>
+                  <p className="text-[#e8e6e1]">{review.timeline.started}</p>
                 </div>
               )}
               {review.timeline.finished && (
                 <div>
-                  <p className="text-sm text-gray-500">Finished</p>
-                  <p>{review.timeline.finished}</p>
+                  <p className="text-sm text-[#8a847a]">Finished</p>
+                  <p className="text-[#e8e6e1]">{review.timeline.finished}</p>
                 </div>
               )}
             </div>
@@ -134,16 +134,16 @@ export default async function Book({
 
           {/* Genres */}
           <div className="min-w-[320px] mb-6">
-            <h2 className="text-lg font-semibold mb-2">Genres</h2>
-            <span className={`inline-block text-gray-400`}>
+            <h2 className="text-lg font-semibold mb-2 text-[#e8e6e1]">Genres</h2>
+            <span className={`inline-block text-[#8a847a]`}>
               {review.book.genres.join(", ")}
             </span>
           </div>
-          <hr className="mb-6 border-1 border-gray-400" />
+          <hr className="mb-6 border border-[#2a2520]" />
 
           {/* Book Description */}
           <div className="mb-6">
-            <p className="text-gray-300 whitespace-pre-line">
+            <p className="text-[#e8e6e1]/80 whitespace-pre-line">
               {review.book.description}
             </p>
           </div>
