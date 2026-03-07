@@ -36,13 +36,6 @@ input, textarea, select {
 }
 
 /* Background utility classes */
-.bg-grid {
-  background-image: 
-    linear-gradient(rgba(60, 50, 40, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(60, 50, 40, 0.08) 1px, transparent 1px);
-  background-size: 40px 40px;
-}
-
 .bg-gradient {
   background: radial-gradient(
     ellipse 120% 100% at 50% 0%,

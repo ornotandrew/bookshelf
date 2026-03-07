@@ -39,7 +39,6 @@ export default function RootLayout({
         className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} antialiased w-screen h-screen flex flex-col bg-[#0d0b09] text-[#e8e6e1] font-sans`}
       >
         {/* Background layers */}
-        <div className="fixed inset-0 bg-grid z-0 pointer-events-none" />
         <div className="fixed inset-0 bg-gradient z-0 pointer-events-none" />
         <div className="fixed inset-0 bg-vignette z-0 pointer-events-none" />
         <NavBar />
