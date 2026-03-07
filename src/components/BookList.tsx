@@ -82,14 +82,22 @@ export default function BookList({ className = "" }: BookListProps) {
   return (
     <div className="w-full space-y-4 pt-6">
       <div className="w-full max-w-sm mx-auto space-y-4">
-        <div className="mx-4">
+        <div className="mx-6 relative">
           <Input
             type="search"
             placeholder="Search by book, author, series, or genre..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full border-1 border-gray-500"
+            className="w-full bg-[#0f0f14] border-[#1a1a24] text-[#e8e8ed] placeholder:text-[#6b6b7a]/60 font-mono text-base pr-8"
           />
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery("")}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-[#6b6b7a] hover:text-[#e8e8ed] transition-colors text-xs"
+            >
+              ✕
+            </button>
+          )}
         </div>
         <div className="flex justify-center gap-2">
           <Button
@@ -120,7 +128,7 @@ export default function BookList({ className = "" }: BookListProps) {
         ) : (
           (groupedReviews as [string, typeof filteredReviews][]).map(([group, reviews]) => (
             <div key={group} className="w-full space-y-4 mb-12">
-              <h2 className="text-xl font-semibold px-4 mb-6">{group}</h2>
+              <h2 className="text-lg font-medium px-4 mb-2 text-white/60 font-mono tracking-wider uppercase text-sm">{group}</h2>
               <div className="flex flex-wrap justify-center gap-4">
                 {reviews.map((review, index) => (
                   <BookCover key={index} review={review} />
