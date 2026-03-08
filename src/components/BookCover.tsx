@@ -25,13 +25,13 @@ export const BookCover = ({ review }: { review: Started<ReviewType> }) => {
 
           {/* Gradient overlay - fades from black on left to transparent on right */}
           <div
-            className="absolute inset-0 bg-gradient-to-r from-black to-transparent from-30% to-90%"
+            className="absolute inset-0 bg-gradient-to-r from-[#0d0b0a] to-transparent from-30% to-90%"
             aria-hidden="true"
           />
 
           {/* Gradient overlay - fades from black on top and bottom to transparent in middle */}
           <div
-            className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,0,0,0.5)0%,rgba(0,0,0,0)10%,rgba(0,0,0,0)90%,rgba(0,0,0,0.5)100%)]"
+            className="absolute inset-0 bg-[linear-gradient(0deg,rgba(13,11,10,0.5)0%,rgba(13,11,10,0)10%,rgba(13,11,10,0)90%,rgba(13,11,10,0.5)100%)]"
             aria-hidden="true"
           />
 
